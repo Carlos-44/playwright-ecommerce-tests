@@ -1,0 +1,23 @@
+{
+    "creditCards": [
+      {
+        "ownerName": "John Doe",
+        "cardNumber": "4111111111111111",
+        "validUntil": "12/25",
+        "cvc": "123"
+      },
+      {
+        "ownerName": "Jane Smith",
+        "cardNumber": "5500000000000004",
+        "validUntil": "08/24",
+        "cvc": "456"
+      },
+      {
+        "ownerName": "Alex Johnson",
+        "cardNumber": "340000000000009",
+        "validUntil": "03/23",
+        "cvc": "789"
+      }
+    ]
+  }
+  

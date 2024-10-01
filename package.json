@@ -1,0 +1,19 @@
+{
+  "name": "playwright-course",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2"
+  },
+  "dependencies": {
+    "playwright-course": "file:",
+    "uuid": "^10.0.0"
+  }
+}
