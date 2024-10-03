@@ -8,7 +8,9 @@ import { LoginPage } from "../pageObject/LoginPage";
 import { RegisterPage } from "../pageObject/RegisterPage";
 import { DeliveryDetails } from "../pageObject/DeliveryDetails";
 import { PaymentPage } from "../pageObject/PaymentPage"; // Use the correct path to PaymentPage.js
-import countriesData from "../data/countries.json"; // Adjust the path to your JSON file
+const fs = require('fs');
+const countriesData = JSON.parse(fs.readFileSync('./Data/countries.json', 'utf8'));
+
 
 test("New user full end to end journey", async ({ page }) => {
   // Initialize ProductsPage and perform product actions
