@@ -7,11 +7,10 @@ import { CheckoutPage } from "../pageObject/CheckoutPage";
 import { LoginPage } from "../pageObject/LoginPage";
 import { RegisterPage } from "../pageObject/RegisterPage";
 import { DeliveryDetails } from "../pageObject/DeliveryDetails";
-import { PaymentPage } from '../pageObject/PaymentPage';  // Use the correct path to PaymentPage.js
-// Import countries from JSON file
+import { PaymentPage } from "../pageObject/PaymentPage"; // Use the correct path to PaymentPage.js
 import countriesData from "../data/countries.json"; // Adjust the path to your JSON file
 
-test.only("New user full end to end journey", async ({ page }) => {
+test("New user full end to end journey", async ({ page }) => {
   // Initialize ProductsPage and perform product actions
   const productPage = new ProductsPage(page);
   await productPage.visit();
@@ -58,7 +57,7 @@ test.only("New user full end to end journey", async ({ page }) => {
 
   // Initialize DeliveryDetails and fill the form with random data
   const deliveryDetails = new DeliveryDetails(page);
-  
+
   // Generate random data without numbers for first and last names
   const randomFirstName = `User_${uuidv4().replace(/[0-9]/g, "").slice(0, 6)}`;
   const randomLastName = `User_${uuidv4().replace(/[0-9]/g, "").slice(0, 6)}`;
@@ -66,7 +65,10 @@ test.only("New user full end to end journey", async ({ page }) => {
   const randomPostcode = uuidv4().slice(0, 5);
 
   // Select a random country and its corresponding city from the imported JSON file
-  const randomCountryObj = countriesData.countries[Math.floor(Math.random() * countriesData.countries.length)];
+  const randomCountryObj =
+    countriesData.countries[
+      Math.floor(Math.random() * countriesData.countries.length)
+    ];
   const randomCountry = randomCountryObj.name;
   const randomCity = randomCountryObj.city;
 
@@ -81,9 +83,8 @@ test.only("New user full end to end journey", async ({ page }) => {
   );
   await deliveryDetails.saveDetails();
 
-  const paymentPage = new PaymentPage(page);  // Initialize PaymentPage class
-  await paymentPage.activateDiscount();  // Call the method to apply discount
+  const paymentPage = new PaymentPage(page); // Initialize PaymentPage class
+  await paymentPage.activateDiscount(); // Call the method to apply discount
   // Fill payment details with the first card data from the JSON
-  await paymentPage.fillPaymentDetails(0);  // Pass index to use different cards (0, 1, or 2)
-
+  await paymentPage.completePayment(0); // Pass index to use different cards (0, 1, or 2)
 });

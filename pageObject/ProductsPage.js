@@ -14,11 +14,22 @@ export class ProductsPage {
     await this.page.goto("/");
   };
 
-  // Method to get the current basket count
+  // Method to check if the current viewport is a desktop view
+  isDesktopViewport = async () => {
+    const viewportSize = await this.page.viewportSize();
+    return viewportSize.width >= 768; // Assuming 768px width or greater is desktop
+  };
+
+  // Method to get the current basket count (only for desktop view)
   getBasketCount = async () => {
-    await this.basketCounter.waitFor();
-    const text = await this.basketCounter.innerText();
-    return parseInt(text, 10);
+    if (await this.isDesktopViewport()) {
+      await this.basketCounter.waitFor();
+      const text = await this.basketCounter.innerText();
+      return parseInt(text, 10);
+    } else {
+      console.log("Basket count not available on mobile view.");
+      return 0; // Return 0 or handle as necessary for mobile views
+    }
   };
 
   // Method to add a product to the basket and verify the basket count
@@ -26,13 +37,24 @@ export class ProductsPage {
     const specificAddButton = this.addButtons.nth(index);
     await specificAddButton.waitFor();
     await expect(specificAddButton).toHaveText("Add to Basket");
-    const basketCountBeforeAdding = await this.getBasketCount();
+
+    // Only check basket count if on desktop
+    let basketCountBeforeAdding = 0;
+    if (await this.isDesktopViewport()) {
+      basketCountBeforeAdding = await this.getBasketCount();
+    }
+
     await specificAddButton.click();
     await expect(specificAddButton).toHaveText("Remove from Basket");
-    const basketCountAfterAdding = await this.getBasketCount();
-    expect(basketCountAfterAdding).toBeGreaterThan(basketCountBeforeAdding); // Corrected the assertion method name
+
+    // Only verify basket count if on desktop
+    if (await this.isDesktopViewport()) {
+      const basketCountAfterAdding = await this.getBasketCount();
+      expect(basketCountAfterAdding).toBeGreaterThan(basketCountBeforeAdding);
+    }
   };
 
+  // Method to sort products by price (cheapest first)
   sortByCheapest = async () => {
     await this.sortDropDown.waitFor();
     await this.productTitle.first().waitFor();

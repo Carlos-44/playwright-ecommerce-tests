@@ -1,9 +1,11 @@
+import { isDesktopViewport } from "../Utility/isDesktopViewport";
+
 export class NavigationPage {
   constructor(page) {
     this.page = page;
-
     this.basketCounter = page.locator('[data-qa="header-basket-count"]');
     this.checkoutLink = page.getByRole("link", { name: "Checkout" });
+    this.mobileBurgerButton = page.locator('[data-qa="burger-button"]');
   }
 
   getBasketCount = async () => {
@@ -13,6 +15,11 @@ export class NavigationPage {
   };
 
   goToCheckout = async () => {
+    if (!isDesktopViewport(this.page)) {
+      await this.mobileBurgerButton.waitFor();
+      await this.mobileBurgerButton.click();
+    }
+
     await this.checkoutLink.waitFor();
     await this.checkoutLink.click();
     await this.page.waitForURL("/basket");

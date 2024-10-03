@@ -1,5 +1,6 @@
 import { expect } from "@playwright/test";
-import creditCardData from "../data/creditCards.json"; // Import the JSON file
+import creditCardData from "../Data/creditCards.json"; // Correct path matching your folder structure
+
 export class PaymentPage {
   constructor(page) {
     this.page = page;
@@ -50,9 +51,6 @@ export class PaymentPage {
     await this.submitDiscountButton.waitFor();
     await this.submitDiscountButton.click();
 
-    // Optionally pause for debugging
-    await this.page.pause();
-
     // Wait for the discount activated message
     await this.discountActivatedMessage.waitFor();
 
@@ -68,13 +66,11 @@ export class PaymentPage {
     // Ensure that the discount value is less than the total value
     expect(discountValueNumber).toBeLessThan(totalValueNumber);
 
-    await this.page.pause();
-
     // Wait for the page to navigate to the payment page
     await this.page.waitForURL(/\/payment/);
   }
   // Method to fill the payment details using the JSON data
-  async fillPaymentDetails(cardIndex = 0) {
+  async completePayment(cardIndex = 0) {
     const card = creditCardData.creditCards[cardIndex]; // Load data based on index (default: 0)
 
     // Wait for the credit card owner input to be visible and fill the form
@@ -102,7 +98,8 @@ export class PaymentPage {
     // Wait for the Pay button to be visible and click it
     await this.payButton.waitFor();
     await this.payButton.click();
+    await this.page.waitForURL(/\/thank-you/, { timeout: 3000 });
 
-    await this.page.pause();
+    
   }
 }
