@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        browser: [chromium, firefox, webkit]
+        browser: [chromium, firefox, webkit] # Playwright will use these browser projects
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -25,6 +25,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      # Install the browsers required by Playwright
+      - name: Install Playwright browsers
+        run: npx playwright install
 
       - name: Run Playwright tests
         run: npx playwright test
