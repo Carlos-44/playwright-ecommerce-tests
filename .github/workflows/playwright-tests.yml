@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        browser: [chromium, firefox, webkit] # Playwright will use these browser projects
+        browser: [chromium, firefox, webkit]
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -21,10 +21,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Update this to Node.js version 18 or higher
+          node-version: '18'
 
       - name: Install dependencies
         run: npm install
 
       - name: Run Playwright tests
-        run: npx playwright test  # Run tests without --browser as Playwright will use the matrix
+        run: npx playwright test
