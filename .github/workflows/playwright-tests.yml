@@ -62,5 +62,10 @@ jobs:
     - name: Clean up
       if: always()
       run: |
-        kill $(jobs -p)  # Ensure the background processes are killed
+        jobs=$(jobs -p)
+        if [ -n "$jobs" ]; then
+          kill $jobs  # Ensure the background processes are killed if they exist
+        else
+          echo "No background processes to clean up"
+        fi
         echo "Cleanup complete"
