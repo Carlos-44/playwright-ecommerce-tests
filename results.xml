@@ -1,15 +1,118 @@
-<testsuites id="" name="" tests="21" failures="0" skipped="0" errors="0" time="53.215013">
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.493" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.493">
+<testsuites id="" name="" tests="21" failures="0" skipped="0" errors="0" time="50.265467">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.711" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.711">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.337" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="13.337">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.495" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="13.495">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
 { element: [32m'499$'[39m, number: [33m499[39m }
 { element: [32m'599$'[39m, number: [33m599[39m }
+Available options in country dropdown: [
+  [32m'Afghanistan'[39m,
+  [32m'Albania'[39m,
+  [32m'Algeria'[39m,
+  [32m'Andorra'[39m,
+  [32m'Angola'[39m,
+  [32m'Antigua and Barbuda'[39m,
+  [32m'Argentina'[39m,
+  [32m'Armenia'[39m,
+  [32m'Australia'[39m,
+  [32m'Austria'[39m,
+  [32m'Azerbaijan'[39m,
+  [32m'Bahamas'[39m,
+  [32m'Bahrain'[39m,
+  [32m'Bangladesh'[39m,
+  [32m'Barbados'[39m,
+  [32m'Belarus'[39m,
+  [32m'Belgium'[39m,
+  [32m'Belize'[39m,
+  [32m'Benin'[39m,
+  [32m'Bhutan'[39m,
+  [32m'Bolivia'[39m,
+  [32m'Bosnia and Herzegovina'[39m,
+  [32m'Botswana'[39m,
+  [32m'Brazil'[39m,
+  [32m'Brunei'[39m,
+  [32m'Bulgaria'[39m,
+  [32m'Burkina Faso'[39m,
+  [32m'Burundi'[39m,
+  [32m"Côte d'Ivoire"[39m,
+  [32m'Cabo Verde'[39m,
+  [32m'Cambodia'[39m,
+  [32m'Cameroon'[39m,
+  [32m'Canada'[39m,
+  [32m'Central African Republic'[39m,
+  [32m'Chad'[39m,
+  [32m'Chile'[39m,
+  [32m'China'[39m,
+  [32m'Colombia'[39m,
+  [32m'Comoros'[39m,
+  [32m'Congo (Congo-Brazzaville)'[39m,
+  [32m'Costa Rica'[39m,
+  [32m'Croatia'[39m,
+  [32m'Cuba'[39m,
+  [32m'Cyprus'[39m,
+  [32m'Czechia (Czech Republic)'[39m,
+  [32m'Democratic Republic of the Congo'[39m,
+  [32m'Denmark'[39m,
+  [32m'Djibouti'[39m,
+  [32m'Dominica'[39m,
+  [32m'Dominican Republic'[39m,
+  [32m'Ecuador'[39m,
+  [32m'Egypt'[39m,
+  [32m'El Salvador'[39m,
+  [32m'Equatorial Guinea'[39m,
+  [32m'Eritrea'[39m,
+  [32m'Estonia'[39m,
+  [32m'Eswatini (fmr. "Swaziland")'[39m,
+  [32m'Ethiopia'[39m,
+  [32m'Fiji'[39m,
+  [32m'Finland'[39m,
+  [32m'France'[39m,
+  [32m'Gabon'[39m,
+  [32m'Gambia'[39m,
+  [32m'Georgia'[39m,
+  [32m'Germany'[39m,
+  [32m'Ghana'[39m,
+  [32m'Greece'[39m,
+  [32m'Grenada'[39m,
+  [32m'Guatemala'[39m,
+  [32m'Guinea'[39m,
+  [32m'Guinea-Bissau'[39m,
+  [32m'Guyana'[39m,
+  [32m'Haiti'[39m,
+  [32m'Holy See'[39m,
+  [32m'Honduras'[39m,
+  [32m'Hungary'[39m,
+  [32m'Iceland'[39m,
+  [32m'India'[39m,
+  [32m'Indonesia'[39m,
+  [32m'Iran'[39m,
+  [32m'Iraq'[39m,
+  [32m'Ireland'[39m,
+  [32m'Israel'[39m,
+  [32m'Italy'[39m,
+  [32m'Jamaica'[39m,
+  [32m'Japan'[39m,
+  [32m'Jordan'[39m,
+  [32m'Kazakhstan'[39m,
+  [32m'Kenya'[39m,
+  [32m'Kiribati'[39m,
+  [32m'Kuwait'[39m,
+  [32m'Kyrgyzstan'[39m,
+  [32m'Laos'[39m,
+  [32m'Latvia'[39m,
+  [32m'Lebanon'[39m,
+  [32m'Lesotho'[39m,
+  [32m'Liberia'[39m,
+  [32m'Libya'[39m,
+  [32m'Liechtenstein'[39m,
+  [32m'Lithuania'[39m,
+  ... 95 more items
+]
 The discount code is: 1597cfe6dc16
 ]]>
 </system-out>
@@ -23,21 +126,124 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.382" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.382">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.349" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.349">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.334" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="4.334">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.34" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="4.34">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="firefox" tests="1" failures="0" skipped="0" time="17.48" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="17.48">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="firefox" tests="1" failures="0" skipped="0" time="16.774" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="16.774">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
 { element: [32m'499$'[39m, number: [33m499[39m }
 { element: [32m'599$'[39m, number: [33m599[39m }
+Available options in country dropdown: [
+  [32m'Afghanistan'[39m,
+  [32m'Albania'[39m,
+  [32m'Algeria'[39m,
+  [32m'Andorra'[39m,
+  [32m'Angola'[39m,
+  [32m'Antigua and Barbuda'[39m,
+  [32m'Argentina'[39m,
+  [32m'Armenia'[39m,
+  [32m'Australia'[39m,
+  [32m'Austria'[39m,
+  [32m'Azerbaijan'[39m,
+  [32m'Bahamas'[39m,
+  [32m'Bahrain'[39m,
+  [32m'Bangladesh'[39m,
+  [32m'Barbados'[39m,
+  [32m'Belarus'[39m,
+  [32m'Belgium'[39m,
+  [32m'Belize'[39m,
+  [32m'Benin'[39m,
+  [32m'Bhutan'[39m,
+  [32m'Bolivia'[39m,
+  [32m'Bosnia and Herzegovina'[39m,
+  [32m'Botswana'[39m,
+  [32m'Brazil'[39m,
+  [32m'Brunei'[39m,
+  [32m'Bulgaria'[39m,
+  [32m'Burkina Faso'[39m,
+  [32m'Burundi'[39m,
+  [32m"Côte d'Ivoire"[39m,
+  [32m'Cabo Verde'[39m,
+  [32m'Cambodia'[39m,
+  [32m'Cameroon'[39m,
+  [32m'Canada'[39m,
+  [32m'Central African Republic'[39m,
+  [32m'Chad'[39m,
+  [32m'Chile'[39m,
+  [32m'China'[39m,
+  [32m'Colombia'[39m,
+  [32m'Comoros'[39m,
+  [32m'Congo (Congo-Brazzaville)'[39m,
+  [32m'Costa Rica'[39m,
+  [32m'Croatia'[39m,
+  [32m'Cuba'[39m,
+  [32m'Cyprus'[39m,
+  [32m'Czechia (Czech Republic)'[39m,
+  [32m'Democratic Republic of the Congo'[39m,
+  [32m'Denmark'[39m,
+  [32m'Djibouti'[39m,
+  [32m'Dominica'[39m,
+  [32m'Dominican Republic'[39m,
+  [32m'Ecuador'[39m,
+  [32m'Egypt'[39m,
+  [32m'El Salvador'[39m,
+  [32m'Equatorial Guinea'[39m,
+  [32m'Eritrea'[39m,
+  [32m'Estonia'[39m,
+  [32m'Eswatini (fmr. "Swaziland")'[39m,
+  [32m'Ethiopia'[39m,
+  [32m'Fiji'[39m,
+  [32m'Finland'[39m,
+  [32m'France'[39m,
+  [32m'Gabon'[39m,
+  [32m'Gambia'[39m,
+  [32m'Georgia'[39m,
+  [32m'Germany'[39m,
+  [32m'Ghana'[39m,
+  [32m'Greece'[39m,
+  [32m'Grenada'[39m,
+  [32m'Guatemala'[39m,
+  [32m'Guinea'[39m,
+  [32m'Guinea-Bissau'[39m,
+  [32m'Guyana'[39m,
+  [32m'Haiti'[39m,
+  [32m'Holy See'[39m,
+  [32m'Honduras'[39m,
+  [32m'Hungary'[39m,
+  [32m'Iceland'[39m,
+  [32m'India'[39m,
+  [32m'Indonesia'[39m,
+  [32m'Iran'[39m,
+  [32m'Iraq'[39m,
+  [32m'Ireland'[39m,
+  [32m'Israel'[39m,
+  [32m'Italy'[39m,
+  [32m'Jamaica'[39m,
+  [32m'Japan'[39m,
+  [32m'Jordan'[39m,
+  [32m'Kazakhstan'[39m,
+  [32m'Kenya'[39m,
+  [32m'Kiribati'[39m,
+  [32m'Kuwait'[39m,
+  [32m'Kyrgyzstan'[39m,
+  [32m'Laos'[39m,
+  [32m'Latvia'[39m,
+  [32m'Lebanon'[39m,
+  [32m'Lesotho'[39m,
+  [32m'Liberia'[39m,
+  [32m'Libya'[39m,
+  [32m'Liechtenstein'[39m,
+  [32m'Lithuania'[39m,
+  ... 95 more items
+]
 The discount code is: 1597cfe6dc16
 ]]>
 </system-out>
@@ -51,21 +257,124 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.032" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="5.032">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.749" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="4.749">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.16" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="3.16">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.507" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="3.507">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="webkit" tests="1" failures="0" skipped="0" time="25.504" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="25.504">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="webkit" tests="1" failures="0" skipped="0" time="22.121" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="22.121">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
 { element: [32m'499$'[39m, number: [33m499[39m }
 { element: [32m'599$'[39m, number: [33m599[39m }
+Available options in country dropdown: [
+  [32m'Afghanistan'[39m,
+  [32m'Albania'[39m,
+  [32m'Algeria'[39m,
+  [32m'Andorra'[39m,
+  [32m'Angola'[39m,
+  [32m'Antigua and Barbuda'[39m,
+  [32m'Argentina'[39m,
+  [32m'Armenia'[39m,
+  [32m'Australia'[39m,
+  [32m'Austria'[39m,
+  [32m'Azerbaijan'[39m,
+  [32m'Bahamas'[39m,
+  [32m'Bahrain'[39m,
+  [32m'Bangladesh'[39m,
+  [32m'Barbados'[39m,
+  [32m'Belarus'[39m,
+  [32m'Belgium'[39m,
+  [32m'Belize'[39m,
+  [32m'Benin'[39m,
+  [32m'Bhutan'[39m,
+  [32m'Bolivia'[39m,
+  [32m'Bosnia and Herzegovina'[39m,
+  [32m'Botswana'[39m,
+  [32m'Brazil'[39m,
+  [32m'Brunei'[39m,
+  [32m'Bulgaria'[39m,
+  [32m'Burkina Faso'[39m,
+  [32m'Burundi'[39m,
+  [32m"Côte d'Ivoire"[39m,
+  [32m'Cabo Verde'[39m,
+  [32m'Cambodia'[39m,
+  [32m'Cameroon'[39m,
+  [32m'Canada'[39m,
+  [32m'Central African Republic'[39m,
+  [32m'Chad'[39m,
+  [32m'Chile'[39m,
+  [32m'China'[39m,
+  [32m'Colombia'[39m,
+  [32m'Comoros'[39m,
+  [32m'Congo (Congo-Brazzaville)'[39m,
+  [32m'Costa Rica'[39m,
+  [32m'Croatia'[39m,
+  [32m'Cuba'[39m,
+  [32m'Cyprus'[39m,
+  [32m'Czechia (Czech Republic)'[39m,
+  [32m'Democratic Republic of the Congo'[39m,
+  [32m'Denmark'[39m,
+  [32m'Djibouti'[39m,
+  [32m'Dominica'[39m,
+  [32m'Dominican Republic'[39m,
+  [32m'Ecuador'[39m,
+  [32m'Egypt'[39m,
+  [32m'El Salvador'[39m,
+  [32m'Equatorial Guinea'[39m,
+  [32m'Eritrea'[39m,
+  [32m'Estonia'[39m,
+  [32m'Eswatini (fmr. "Swaziland")'[39m,
+  [32m'Ethiopia'[39m,
+  [32m'Fiji'[39m,
+  [32m'Finland'[39m,
+  [32m'France'[39m,
+  [32m'Gabon'[39m,
+  [32m'Gambia'[39m,
+  [32m'Georgia'[39m,
+  [32m'Germany'[39m,
+  [32m'Ghana'[39m,
+  [32m'Greece'[39m,
+  [32m'Grenada'[39m,
+  [32m'Guatemala'[39m,
+  [32m'Guinea'[39m,
+  [32m'Guinea-Bissau'[39m,
+  [32m'Guyana'[39m,
+  [32m'Haiti'[39m,
+  [32m'Holy See'[39m,
+  [32m'Honduras'[39m,
+  [32m'Hungary'[39m,
+  [32m'Iceland'[39m,
+  [32m'India'[39m,
+  [32m'Indonesia'[39m,
+  [32m'Iran'[39m,
+  [32m'Iraq'[39m,
+  [32m'Ireland'[39m,
+  [32m'Israel'[39m,
+  [32m'Italy'[39m,
+  [32m'Jamaica'[39m,
+  [32m'Japan'[39m,
+  [32m'Jordan'[39m,
+  [32m'Kazakhstan'[39m,
+  [32m'Kenya'[39m,
+  [32m'Kiribati'[39m,
+  [32m'Kuwait'[39m,
+  [32m'Kyrgyzstan'[39m,
+  [32m'Laos'[39m,
+  [32m'Latvia'[39m,
+  [32m'Lebanon'[39m,
+  [32m'Lesotho'[39m,
+  [32m'Liberia'[39m,
+  [32m'Libya'[39m,
+  [32m'Liechtenstein'[39m,
+  [32m'Lithuania'[39m,
+  ... 95 more items
+]
 The discount code is: 1597cfe6dc16
 ]]>
 </system-out>
@@ -79,21 +388,124 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.74" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="6.74">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.27" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="6.27">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="2.532" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.532">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="2.386" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.386">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="13.076" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="13.076">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="12.225" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="12.225">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
 { element: [32m'499$'[39m, number: [33m499[39m }
 { element: [32m'599$'[39m, number: [33m599[39m }
+Available options in country dropdown: [
+  [32m'Afghanistan'[39m,
+  [32m'Albania'[39m,
+  [32m'Algeria'[39m,
+  [32m'Andorra'[39m,
+  [32m'Angola'[39m,
+  [32m'Antigua and Barbuda'[39m,
+  [32m'Argentina'[39m,
+  [32m'Armenia'[39m,
+  [32m'Australia'[39m,
+  [32m'Austria'[39m,
+  [32m'Azerbaijan'[39m,
+  [32m'Bahamas'[39m,
+  [32m'Bahrain'[39m,
+  [32m'Bangladesh'[39m,
+  [32m'Barbados'[39m,
+  [32m'Belarus'[39m,
+  [32m'Belgium'[39m,
+  [32m'Belize'[39m,
+  [32m'Benin'[39m,
+  [32m'Bhutan'[39m,
+  [32m'Bolivia'[39m,
+  [32m'Bosnia and Herzegovina'[39m,
+  [32m'Botswana'[39m,
+  [32m'Brazil'[39m,
+  [32m'Brunei'[39m,
+  [32m'Bulgaria'[39m,
+  [32m'Burkina Faso'[39m,
+  [32m'Burundi'[39m,
+  [32m"Côte d'Ivoire"[39m,
+  [32m'Cabo Verde'[39m,
+  [32m'Cambodia'[39m,
+  [32m'Cameroon'[39m,
+  [32m'Canada'[39m,
+  [32m'Central African Republic'[39m,
+  [32m'Chad'[39m,
+  [32m'Chile'[39m,
+  [32m'China'[39m,
+  [32m'Colombia'[39m,
+  [32m'Comoros'[39m,
+  [32m'Congo (Congo-Brazzaville)'[39m,
+  [32m'Costa Rica'[39m,
+  [32m'Croatia'[39m,
+  [32m'Cuba'[39m,
+  [32m'Cyprus'[39m,
+  [32m'Czechia (Czech Republic)'[39m,
+  [32m'Democratic Republic of the Congo'[39m,
+  [32m'Denmark'[39m,
+  [32m'Djibouti'[39m,
+  [32m'Dominica'[39m,
+  [32m'Dominican Republic'[39m,
+  [32m'Ecuador'[39m,
+  [32m'Egypt'[39m,
+  [32m'El Salvador'[39m,
+  [32m'Equatorial Guinea'[39m,
+  [32m'Eritrea'[39m,
+  [32m'Estonia'[39m,
+  [32m'Eswatini (fmr. "Swaziland")'[39m,
+  [32m'Ethiopia'[39m,
+  [32m'Fiji'[39m,
+  [32m'Finland'[39m,
+  [32m'France'[39m,
+  [32m'Gabon'[39m,
+  [32m'Gambia'[39m,
+  [32m'Georgia'[39m,
+  [32m'Germany'[39m,
+  [32m'Ghana'[39m,
+  [32m'Greece'[39m,
+  [32m'Grenada'[39m,
+  [32m'Guatemala'[39m,
+  [32m'Guinea'[39m,
+  [32m'Guinea-Bissau'[39m,
+  [32m'Guyana'[39m,
+  [32m'Haiti'[39m,
+  [32m'Holy See'[39m,
+  [32m'Honduras'[39m,
+  [32m'Hungary'[39m,
+  [32m'Iceland'[39m,
+  [32m'India'[39m,
+  [32m'Indonesia'[39m,
+  [32m'Iran'[39m,
+  [32m'Iraq'[39m,
+  [32m'Ireland'[39m,
+  [32m'Israel'[39m,
+  [32m'Italy'[39m,
+  [32m'Jamaica'[39m,
+  [32m'Japan'[39m,
+  [32m'Jordan'[39m,
+  [32m'Kazakhstan'[39m,
+  [32m'Kenya'[39m,
+  [32m'Kiribati'[39m,
+  [32m'Kuwait'[39m,
+  [32m'Kyrgyzstan'[39m,
+  [32m'Laos'[39m,
+  [32m'Latvia'[39m,
+  [32m'Lebanon'[39m,
+  [32m'Lesotho'[39m,
+  [32m'Liberia'[39m,
+  [32m'Libya'[39m,
+  [32m'Liechtenstein'[39m,
+  [32m'Lithuania'[39m,
+  ... 95 more items
+]
 The discount code is: 1597cfe6dc16
 ]]>
 </system-out>
@@ -107,21 +519,124 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="2.093" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="2.093">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="1.737" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.737">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="3.393" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="3.393">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="2.512" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.512">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="21.088" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="21.088">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="20.989" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="20.989">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
 { element: [32m'499$'[39m, number: [33m499[39m }
 { element: [32m'599$'[39m, number: [33m599[39m }
+Available options in country dropdown: [
+  [32m'Afghanistan'[39m,
+  [32m'Albania'[39m,
+  [32m'Algeria'[39m,
+  [32m'Andorra'[39m,
+  [32m'Angola'[39m,
+  [32m'Antigua and Barbuda'[39m,
+  [32m'Argentina'[39m,
+  [32m'Armenia'[39m,
+  [32m'Australia'[39m,
+  [32m'Austria'[39m,
+  [32m'Azerbaijan'[39m,
+  [32m'Bahamas'[39m,
+  [32m'Bahrain'[39m,
+  [32m'Bangladesh'[39m,
+  [32m'Barbados'[39m,
+  [32m'Belarus'[39m,
+  [32m'Belgium'[39m,
+  [32m'Belize'[39m,
+  [32m'Benin'[39m,
+  [32m'Bhutan'[39m,
+  [32m'Bolivia'[39m,
+  [32m'Bosnia and Herzegovina'[39m,
+  [32m'Botswana'[39m,
+  [32m'Brazil'[39m,
+  [32m'Brunei'[39m,
+  [32m'Bulgaria'[39m,
+  [32m'Burkina Faso'[39m,
+  [32m'Burundi'[39m,
+  [32m"Côte d'Ivoire"[39m,
+  [32m'Cabo Verde'[39m,
+  [32m'Cambodia'[39m,
+  [32m'Cameroon'[39m,
+  [32m'Canada'[39m,
+  [32m'Central African Republic'[39m,
+  [32m'Chad'[39m,
+  [32m'Chile'[39m,
+  [32m'China'[39m,
+  [32m'Colombia'[39m,
+  [32m'Comoros'[39m,
+  [32m'Congo (Congo-Brazzaville)'[39m,
+  [32m'Costa Rica'[39m,
+  [32m'Croatia'[39m,
+  [32m'Cuba'[39m,
+  [32m'Cyprus'[39m,
+  [32m'Czechia (Czech Republic)'[39m,
+  [32m'Democratic Republic of the Congo'[39m,
+  [32m'Denmark'[39m,
+  [32m'Djibouti'[39m,
+  [32m'Dominica'[39m,
+  [32m'Dominican Republic'[39m,
+  [32m'Ecuador'[39m,
+  [32m'Egypt'[39m,
+  [32m'El Salvador'[39m,
+  [32m'Equatorial Guinea'[39m,
+  [32m'Eritrea'[39m,
+  [32m'Estonia'[39m,
+  [32m'Eswatini (fmr. "Swaziland")'[39m,
+  [32m'Ethiopia'[39m,
+  [32m'Fiji'[39m,
+  [32m'Finland'[39m,
+  [32m'France'[39m,
+  [32m'Gabon'[39m,
+  [32m'Gambia'[39m,
+  [32m'Georgia'[39m,
+  [32m'Germany'[39m,
+  [32m'Ghana'[39m,
+  [32m'Greece'[39m,
+  [32m'Grenada'[39m,
+  [32m'Guatemala'[39m,
+  [32m'Guinea'[39m,
+  [32m'Guinea-Bissau'[39m,
+  [32m'Guyana'[39m,
+  [32m'Haiti'[39m,
+  [32m'Holy See'[39m,
+  [32m'Honduras'[39m,
+  [32m'Hungary'[39m,
+  [32m'Iceland'[39m,
+  [32m'India'[39m,
+  [32m'Indonesia'[39m,
+  [32m'Iran'[39m,
+  [32m'Iraq'[39m,
+  [32m'Ireland'[39m,
+  [32m'Israel'[39m,
+  [32m'Italy'[39m,
+  [32m'Jamaica'[39m,
+  [32m'Japan'[39m,
+  [32m'Jordan'[39m,
+  [32m'Kazakhstan'[39m,
+  [32m'Kenya'[39m,
+  [32m'Kiribati'[39m,
+  [32m'Kuwait'[39m,
+  [32m'Kyrgyzstan'[39m,
+  [32m'Laos'[39m,
+  [32m'Latvia'[39m,
+  [32m'Lebanon'[39m,
+  [32m'Lesotho'[39m,
+  [32m'Liberia'[39m,
+  [32m'Libya'[39m,
+  [32m'Liechtenstein'[39m,
+  [32m'Lithuania'[39m,
+  ... 95 more items
+]
 The discount code is: 1597cfe6dc16
 ]]>
 </system-out>
@@ -135,21 +650,124 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="6.534" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="6.534">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="5.132" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="5.132">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="2.321" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.321">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="2.494" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.494">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="11.785" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.785">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="11.753" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.753">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
 { element: [32m'499$'[39m, number: [33m499[39m }
 { element: [32m'599$'[39m, number: [33m599[39m }
+Available options in country dropdown: [
+  [32m'Afghanistan'[39m,
+  [32m'Albania'[39m,
+  [32m'Algeria'[39m,
+  [32m'Andorra'[39m,
+  [32m'Angola'[39m,
+  [32m'Antigua and Barbuda'[39m,
+  [32m'Argentina'[39m,
+  [32m'Armenia'[39m,
+  [32m'Australia'[39m,
+  [32m'Austria'[39m,
+  [32m'Azerbaijan'[39m,
+  [32m'Bahamas'[39m,
+  [32m'Bahrain'[39m,
+  [32m'Bangladesh'[39m,
+  [32m'Barbados'[39m,
+  [32m'Belarus'[39m,
+  [32m'Belgium'[39m,
+  [32m'Belize'[39m,
+  [32m'Benin'[39m,
+  [32m'Bhutan'[39m,
+  [32m'Bolivia'[39m,
+  [32m'Bosnia and Herzegovina'[39m,
+  [32m'Botswana'[39m,
+  [32m'Brazil'[39m,
+  [32m'Brunei'[39m,
+  [32m'Bulgaria'[39m,
+  [32m'Burkina Faso'[39m,
+  [32m'Burundi'[39m,
+  [32m"Côte d'Ivoire"[39m,
+  [32m'Cabo Verde'[39m,
+  [32m'Cambodia'[39m,
+  [32m'Cameroon'[39m,
+  [32m'Canada'[39m,
+  [32m'Central African Republic'[39m,
+  [32m'Chad'[39m,
+  [32m'Chile'[39m,
+  [32m'China'[39m,
+  [32m'Colombia'[39m,
+  [32m'Comoros'[39m,
+  [32m'Congo (Congo-Brazzaville)'[39m,
+  [32m'Costa Rica'[39m,
+  [32m'Croatia'[39m,
+  [32m'Cuba'[39m,
+  [32m'Cyprus'[39m,
+  [32m'Czechia (Czech Republic)'[39m,
+  [32m'Democratic Republic of the Congo'[39m,
+  [32m'Denmark'[39m,
+  [32m'Djibouti'[39m,
+  [32m'Dominica'[39m,
+  [32m'Dominican Republic'[39m,
+  [32m'Ecuador'[39m,
+  [32m'Egypt'[39m,
+  [32m'El Salvador'[39m,
+  [32m'Equatorial Guinea'[39m,
+  [32m'Eritrea'[39m,
+  [32m'Estonia'[39m,
+  [32m'Eswatini (fmr. "Swaziland")'[39m,
+  [32m'Ethiopia'[39m,
+  [32m'Fiji'[39m,
+  [32m'Finland'[39m,
+  [32m'France'[39m,
+  [32m'Gabon'[39m,
+  [32m'Gambia'[39m,
+  [32m'Georgia'[39m,
+  [32m'Germany'[39m,
+  [32m'Ghana'[39m,
+  [32m'Greece'[39m,
+  [32m'Grenada'[39m,
+  [32m'Guatemala'[39m,
+  [32m'Guinea'[39m,
+  [32m'Guinea-Bissau'[39m,
+  [32m'Guyana'[39m,
+  [32m'Haiti'[39m,
+  [32m'Holy See'[39m,
+  [32m'Honduras'[39m,
+  [32m'Hungary'[39m,
+  [32m'Iceland'[39m,
+  [32m'India'[39m,
+  [32m'Indonesia'[39m,
+  [32m'Iran'[39m,
+  [32m'Iraq'[39m,
+  [32m'Ireland'[39m,
+  [32m'Israel'[39m,
+  [32m'Italy'[39m,
+  [32m'Jamaica'[39m,
+  [32m'Japan'[39m,
+  [32m'Jordan'[39m,
+  [32m'Kazakhstan'[39m,
+  [32m'Kenya'[39m,
+  [32m'Kiribati'[39m,
+  [32m'Kuwait'[39m,
+  [32m'Kyrgyzstan'[39m,
+  [32m'Laos'[39m,
+  [32m'Latvia'[39m,
+  [32m'Lebanon'[39m,
+  [32m'Lesotho'[39m,
+  [32m'Liberia'[39m,
+  [32m'Libya'[39m,
+  [32m'Liechtenstein'[39m,
+  [32m'Lithuania'[39m,
+  ... 95 more items
+]
 The discount code is: 1597cfe6dc16
 ]]>
 </system-out>
@@ -163,21 +781,124 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="1.073" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.073">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="1.155" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.155">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.204" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.204">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.396" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.396">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="11.557" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.557">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="11.613" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.613">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
 { element: [32m'499$'[39m, number: [33m499[39m }
 { element: [32m'599$'[39m, number: [33m599[39m }
+Available options in country dropdown: [
+  [32m'Afghanistan'[39m,
+  [32m'Albania'[39m,
+  [32m'Algeria'[39m,
+  [32m'Andorra'[39m,
+  [32m'Angola'[39m,
+  [32m'Antigua and Barbuda'[39m,
+  [32m'Argentina'[39m,
+  [32m'Armenia'[39m,
+  [32m'Australia'[39m,
+  [32m'Austria'[39m,
+  [32m'Azerbaijan'[39m,
+  [32m'Bahamas'[39m,
+  [32m'Bahrain'[39m,
+  [32m'Bangladesh'[39m,
+  [32m'Barbados'[39m,
+  [32m'Belarus'[39m,
+  [32m'Belgium'[39m,
+  [32m'Belize'[39m,
+  [32m'Benin'[39m,
+  [32m'Bhutan'[39m,
+  [32m'Bolivia'[39m,
+  [32m'Bosnia and Herzegovina'[39m,
+  [32m'Botswana'[39m,
+  [32m'Brazil'[39m,
+  [32m'Brunei'[39m,
+  [32m'Bulgaria'[39m,
+  [32m'Burkina Faso'[39m,
+  [32m'Burundi'[39m,
+  [32m"Côte d'Ivoire"[39m,
+  [32m'Cabo Verde'[39m,
+  [32m'Cambodia'[39m,
+  [32m'Cameroon'[39m,
+  [32m'Canada'[39m,
+  [32m'Central African Republic'[39m,
+  [32m'Chad'[39m,
+  [32m'Chile'[39m,
+  [32m'China'[39m,
+  [32m'Colombia'[39m,
+  [32m'Comoros'[39m,
+  [32m'Congo (Congo-Brazzaville)'[39m,
+  [32m'Costa Rica'[39m,
+  [32m'Croatia'[39m,
+  [32m'Cuba'[39m,
+  [32m'Cyprus'[39m,
+  [32m'Czechia (Czech Republic)'[39m,
+  [32m'Democratic Republic of the Congo'[39m,
+  [32m'Denmark'[39m,
+  [32m'Djibouti'[39m,
+  [32m'Dominica'[39m,
+  [32m'Dominican Republic'[39m,
+  [32m'Ecuador'[39m,
+  [32m'Egypt'[39m,
+  [32m'El Salvador'[39m,
+  [32m'Equatorial Guinea'[39m,
+  [32m'Eritrea'[39m,
+  [32m'Estonia'[39m,
+  [32m'Eswatini (fmr. "Swaziland")'[39m,
+  [32m'Ethiopia'[39m,
+  [32m'Fiji'[39m,
+  [32m'Finland'[39m,
+  [32m'France'[39m,
+  [32m'Gabon'[39m,
+  [32m'Gambia'[39m,
+  [32m'Georgia'[39m,
+  [32m'Germany'[39m,
+  [32m'Ghana'[39m,
+  [32m'Greece'[39m,
+  [32m'Grenada'[39m,
+  [32m'Guatemala'[39m,
+  [32m'Guinea'[39m,
+  [32m'Guinea-Bissau'[39m,
+  [32m'Guyana'[39m,
+  [32m'Haiti'[39m,
+  [32m'Holy See'[39m,
+  [32m'Honduras'[39m,
+  [32m'Hungary'[39m,
+  [32m'Iceland'[39m,
+  [32m'India'[39m,
+  [32m'Indonesia'[39m,
+  [32m'Iran'[39m,
+  [32m'Iraq'[39m,
+  [32m'Ireland'[39m,
+  [32m'Israel'[39m,
+  [32m'Italy'[39m,
+  [32m'Jamaica'[39m,
+  [32m'Japan'[39m,
+  [32m'Jordan'[39m,
+  [32m'Kazakhstan'[39m,
+  [32m'Kenya'[39m,
+  [32m'Kiribati'[39m,
+  [32m'Kuwait'[39m,
+  [32m'Kyrgyzstan'[39m,
+  [32m'Laos'[39m,
+  [32m'Latvia'[39m,
+  [32m'Lebanon'[39m,
+  [32m'Lesotho'[39m,
+  [32m'Liberia'[39m,
+  [32m'Libya'[39m,
+  [32m'Liechtenstein'[39m,
+  [32m'Lithuania'[39m,
+  ... 95 more items
+]
 The discount code is: 1597cfe6dc16
 ]]>
 </system-out>
@@ -191,8 +912,8 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="0.971" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="0.971">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="1.088" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.088">
 </testcase>
 </testsuite>
 </testsuites>

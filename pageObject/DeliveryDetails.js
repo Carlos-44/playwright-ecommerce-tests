@@ -60,7 +60,17 @@ export class DeliveryDetails {
     await this.cityInput.waitFor({ state: "visible" });
     await this.cityInput.fill(city);
 
-    await this.countryDropdown.waitFor({ state: "visible" });
+    // Wait for the dropdown to be attached and visible
+    await this.countryDropdown.waitFor({ state: "attached", timeout: 60000 });
+    await this.countryDropdown.waitFor({ state: "visible", timeout: 60000 });
+
+    // Debug: Log available options
+    const availableOptions = await this.countryDropdown.evaluate(dropdown =>
+      Array.from(dropdown.options).map(option => option.textContent)
+    );
+    console.log('Available options in country dropdown:', availableOptions);
+
+    // Select the country from the dropdown
     await this.countryDropdown.selectOption({ label: country });
   };
 
