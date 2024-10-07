@@ -3,17 +3,17 @@ const { devices } = require("@playwright/test");
 const config = {
   testDir: "./tests",
 
-  timeout: 60 * 1000,
+  timeout: 60 * 1000, // Test timeout of 60 seconds
 
   expect: {
-    timeout: 10000,
+    timeout: 10000, // Timeout for expect assertions
   },
 
   fullyParallel: true,
 
   forbidOnly: !!process.env.CI,
 
-  retries: process.env.CI ? 3 : 1,
+  retries: process.env.CI ? 3 : 1, // Retry failed tests 3 times in CI
 
   workers: process.env.CI ? 2 : 4,
 
@@ -25,15 +25,11 @@ const config = {
 
   use: {
     actionTimeout: 15000,
-
-    baseURL: "http://localhost:2221",
-
-    trace: "on-first-retry",
-
-    headless: true,
-
-    video: "retain-on-failure",
-    screenshot: "only-on-failure",
+    baseURL: "http://localhost:2221", // Local server URL
+    trace: "on",  // Enable trace on every test for debugging
+    video: "on",  // Record video for all tests
+    headless: true,  // Always run in headless mode
+    screenshot: "only-on-failure", // Capture screenshots on failure
   },
 
   projects: [
@@ -91,7 +87,7 @@ const config = {
   webServer: {
     command: "npm run start",
     port: 2221,
-    timeout: 180 * 1000,
+    timeout: 180 * 1000,  // Server timeout of 180 seconds
     reuseExistingServer: true,
   },
 

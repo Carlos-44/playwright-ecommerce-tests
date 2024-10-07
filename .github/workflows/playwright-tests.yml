@@ -24,19 +24,16 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'  # Updated to use Node.js 18
+        node-version: '18'
 
     - name: Install dependencies
       run: npm install
-
-    - name: Install Playwright browsers
-      run: npx playwright install --with-deps chrome
 
     - name: Start application
       run: |
         chmod +x ./shopping-store-linux-amd64
         ./shopping-store-linux-amd64 &
-      timeout-minutes: 2
+      timeout-minutes: 3  # Increased to 3 minutes
       env:
         NODE_ENV: production
 
@@ -44,14 +41,14 @@ jobs:
       run: npx wait-on http://localhost:2221
 
     - name: Run Playwright tests
-      run: npx playwright test --timeout=60000  # Run the tests in headless mode
+      run: npx playwright test --timeout=60000
 
     - name: Generate Playwright report
       run: npx playwright show-report
 
     - name: Upload Playwright report
       if: failure()
-      uses: actions/upload-artifact@v4  # Updated to v4
+      uses: actions/upload-artifact@v4
       with:
         name: playwright-report
         path: playwright-report
@@ -61,7 +58,7 @@ jobs:
 
     - name: Upload Test Results (JUnit)
       if: always()
-      uses: actions/upload-artifact@v4  # Updated to v4
+      uses: actions/upload-artifact@v4
       with:
         name: test-results
         path: results.xml
@@ -71,8 +68,6 @@ jobs:
       run: |
         jobs=$(jobs -p)
         if [ -n "$jobs" ]; then
-          kill $jobs
-        else
-          echo "No background processes to clean up"
+          kill $jobs || echo "No background processes to kill"
         fi
         echo "Cleanup complete"
