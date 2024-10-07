@@ -28,7 +28,7 @@ export class RegisterPage {
       await this.registerButton.waitFor();
       await this.registerButton.click();
     } catch (error) {
-      console.error("Error during user signup:", error);
+      throw new Error(`Error during user signup: ${error}`);
     } finally {
     }
   };

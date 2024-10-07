@@ -27,10 +27,8 @@ test("New user full end to end journey", async ({ page }) => {
 
   // Initialize CheckoutPage and test removing products with different methods
   const checkoutPage = new CheckoutPage(page);
-  console.log("Testing with replace('$', '') approach:");
   await checkoutPage.removeCheapestProductWithReplace();
 
-  console.log("Testing with regex approach:");
   await checkoutPage.removeCheapestProductWithRegex();
 
   await checkoutPage.continueToCheckout();
@@ -50,8 +48,7 @@ test("New user full end to end journey", async ({ page }) => {
 
   // Confirm page transition
   if (!page.url().includes("/delivery-details")) {
-    console.error("Failed to navigate to the delivery details page.");
-    return;
+    throw new Error("Failed to navigate to the delivery details page.");
   }
 
   // Add element-specific wait to ensure you are on the correct page

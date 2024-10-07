@@ -24,11 +24,9 @@ export class CheckoutPage {
     const justNumbers = allPriceTexts.map((element) => {
       const withoutDollarSign = element.replace("$", ""); // Remove the dollar sign
       const number = parseFloat(withoutDollarSign); // Convert to float
-      console.warn({ element, withoutDollarSign, number }); // Logging each step for clarity
       return number; // Return the parsed number
     });
 
-    console.warn("Method 1 - Your Approach:", justNumbers);
     const smallestPrice = Math.min(...justNumbers);
     const smallestPriceIndex = justNumbers.indexOf(smallestPrice);
     const specificRemoveButton =
@@ -48,11 +46,9 @@ export class CheckoutPage {
     // Convert price texts using regex approach
     const justNumbers = allPriceTexts.map((element) => {
       const number = parseFloat(element.replace(/[^\d.-]/g, "")); // Remove all non-numeric characters
-      console.log({ element, number }); // Logging each element and its converted number
       return number; // Return the parsed number
     });
 
-    console.warn("Method 2 - Regex Approach:", justNumbers);
     const smallestPrice = Math.min(...justNumbers);
     const smallestPriceIndex = justNumbers.indexOf(smallestPrice);
     const specificRemoveButton =

@@ -64,14 +64,31 @@ export class DeliveryDetails {
     await this.countryDropdown.waitFor({ state: "attached", timeout: 60000 });
     await this.countryDropdown.waitFor({ state: "visible", timeout: 60000 });
 
-    // Debug: Log available options
-    const availableOptions = await this.countryDropdown.evaluate(dropdown =>
-      Array.from(dropdown.options).map(option => option.textContent)
-    );
-    console.log('Available options in country dropdown:', availableOptions);
+    // Retry mechanism for selecting country
+    let success = false;
+    for (let i = 0; i < 3; i++) {
+      try {
+        await this.countryDropdown.selectOption({ label: country });
+        success = true;
+        break;
+      } catch (error) {
+        if (i < 2) {
+          console.warn(
+            `Attempt ${i + 1} failed to select country: ${country}, retrying...`
+          );
+          await this.page.waitForTimeout(1000); // Wait 1 second before retrying
+        } else {
+          console.error(
+            `Failed to select country after ${i + 1} attempts: ${error}`
+          );
+          throw error;
+        }
+      }
+    }
 
-    // Select the country from the dropdown
-    await this.countryDropdown.selectOption({ label: country });
+    if (!success) {
+      throw new Error(`Failed to select country ${country} after 3 attempts.`);
+    }
   };
 
   saveDetails = async () => {

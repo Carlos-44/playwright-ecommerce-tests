@@ -38,7 +38,6 @@ export class PaymentPage {
     // Wait for the discount code to be visible
     await this.discountCode.waitFor();
     const Code = await this.discountCode.innerText();
-    console.log(`The discount code is: ${Code}`);
 
     // Fill the discount code into the input field
     await this.discountInput.waitFor();
@@ -69,6 +68,7 @@ export class PaymentPage {
     // Wait for the page to navigate to the payment page
     await this.page.waitForURL(/\/payment/);
   }
+
   // Method to fill the payment details using the JSON data
   async completePayment(cardIndex = 0) {
     const card = creditCardData.creditCards[cardIndex]; // Load data based on index (default: 0)
@@ -99,7 +99,5 @@ export class PaymentPage {
     await this.payButton.waitFor();
     await this.payButton.click();
     await this.page.waitForURL(/\/thank-you/, { timeout: 3000 });
-
-    
   }
 }

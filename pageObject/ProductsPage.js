@@ -27,7 +27,6 @@ export class ProductsPage {
       const text = await this.basketCounter.innerText();
       return parseInt(text, 10);
     } else {
-      console.log("Basket count not available on mobile view.");
       return 0; // Return 0 or handle as necessary for mobile views
     }
   };
