@@ -1,86 +1,86 @@
-<testsuites id="" name="" tests="21" failures="0" skipped="0" errors="0" time="52.059127000000004">
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.969" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.969">
+<testsuites id="" name="" tests="21" failures="0" skipped="0" errors="0" time="50.705074999999994">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.626" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.626">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.802" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="13.802">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="chromium" tests="1" failures="0" skipped="0" time="14.358" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="14.358">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.517" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.517">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.476" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.476">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.435" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="4.435">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.576" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="4.576">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="firefox" tests="1" failures="0" skipped="0" time="17.651" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="17.651">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="firefox" tests="1" failures="0" skipped="0" time="16.826" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="16.826">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.939" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="5.939">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.859" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="4.859">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.555" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="3.555">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.02" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="3.02">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="webkit" tests="1" failures="0" skipped="0" time="22.987" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="22.987">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="webkit" tests="1" failures="0" skipped="0" time="21.914" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="21.914">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="webkit" tests="1" failures="0" skipped="0" time="5.699" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="5.699">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="webkit" tests="1" failures="0" skipped="0" time="5.912" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="5.912">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="2.261" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.261">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="2.3" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.3">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="12.168" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="12.168">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="12.022" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="12.022">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="1.753" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.753">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="1.631" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.631">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="2.625" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.625">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="2.492" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.492">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="20.287" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="20.287">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="18.995" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="18.995">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="5.348" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="5.348">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="5.602" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="5.602">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="2.139" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.139">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="2.548" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.548">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="11.803" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.803">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="12.048" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="12.048">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="1.114" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.114">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="1.021" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.021">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.483" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.483">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.341" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.341">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="11.32" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.32">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="11.34" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.34">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:47:36.348Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="0.96" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="0.96">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:10:26.100Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="0.984" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="0.984">
 </testcase>
 </testsuite>
 </testsuites>
