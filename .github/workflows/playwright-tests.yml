@@ -32,19 +32,25 @@ jobs:
     - name: Install wait-on
       run: npm install wait-on --save-dev  # Ensures wait-on is installed
 
+    - name: Install Playwright browsers
+      uses: microsoft/playwright-github-action@v1  # Use Playwright GitHub Action to install required browsers
+
     - name: Start application
       run: |
         chmod +x ./shopping-store-linux-amd64
-        ./shopping-store-linux-amd64 &
+        ./shopping-store-linux-amd64 & echo $! > pid.txt  # Start the app and track the PID for cleanup
       timeout-minutes: 3  # Increased to 3 minutes
       env:
         NODE_ENV: production
 
     - name: Wait for server to start
-      run: npx wait-on http://localhost:2221
+      run: npx wait-on http://localhost:2221 && sleep 10  # Ensure the server is up, give an additional buffer
+
+    - name: Check server health
+      run: curl -f http://localhost:2221/health || exit 1  # Optional: Add server health check to ensure it's live
 
     - name: Run Playwright tests
-      run: npx playwright test --timeout=60000
+      run: npx playwright test --timeout=60000 --workers=4  # Run Playwright tests in parallel with 4 workers
 
     - name: Generate Playwright report
       run: npx playwright show-report
@@ -68,9 +74,4 @@ jobs:
 
     - name: Clean up
       if: always()
-      run: |
-        jobs=$(jobs -p)
-        if [ -n "$jobs" ]; then
-          kill $jobs || echo "No background processes to kill"
-        fi
-        echo "Cleanup complete"
+      run: kill $(cat pid.txt) || echo "No process to kill"  # Cleanup by killing the server process tracked by pid.txt
