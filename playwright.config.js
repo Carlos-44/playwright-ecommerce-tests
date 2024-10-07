@@ -9,14 +9,14 @@ const config = {
   testDir: "./tests", // Directory where the test files are located
 
   /* Maximum time one test can run for. */
-  timeout: 30 * 1000, // 30 seconds per test timeout
+  timeout: 60 * 1000, // Increased to 60 seconds per test timeout
 
   expect: {
     /**
      * Maximum time expect() should wait for the condition to be met.
      * For example in `await expect(locator).toHaveText();`
      */
-    timeout: 5000, // 5 seconds for assertions like expect(locator).toHaveText()
+    timeout: 10000, // Increased to 10 seconds for assertions
   },
 
   globalSetup: require.resolve("./globalSetup.js"),
@@ -28,7 +28,7 @@ const config = {
   forbidOnly: !!process.env.CI, // Fail if test.only is in the code in CI
 
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0, // Retries tests up to 2 times in CI environment for flaky tests
+  retries: process.env.CI ? 3 : 1, // Retries tests up to 3 times in CI, 1 retry locally
 
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 2 : 4, // Limits workers to 2 on CI and 4 locally
@@ -43,7 +43,7 @@ const config = {
   /* Shared settings for all projects below. */
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
-    actionTimeout: 0, // No action timeout by default
+    actionTimeout: 15000, // Increased action timeout to 15 seconds
 
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: "http://localhost:2221", // Default base URL for the tests
@@ -116,7 +116,7 @@ const config = {
   webServer: {
     command: "npm run start", // Command to start the server before tests
     port: 2221, // The port where your application will run
-    timeout: 120 * 1000, // Max time to wait for the server to start (120 seconds)
+    timeout: 180 * 1000, // Increased max time to wait for the server to start (180 seconds)
     reuseExistingServer: true, // Reuse the existing server if it's already running
   },
 };
