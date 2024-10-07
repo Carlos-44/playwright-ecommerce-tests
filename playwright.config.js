@@ -33,8 +33,12 @@ const config = {
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 2 : 4, // Limits workers to 2 on CI and 4 locally
 
-  /* Reporter to use. */
-  reporter: "line", // Line reporter shows concise test status in console
+  /* Reporter configuration with detailed options */
+  reporter: [
+    ["line"],  // Concise console output
+    ["html", { outputFolder: "playwright-report", open: "never" }], // HTML report generation
+    ["junit", { outputFile: "results.xml" }]  // JUnit XML report for CI
+  ],
 
   /* Shared settings for all projects below. */
   use: {
@@ -44,15 +48,15 @@ const config = {
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: "http://localhost:2221", // Default base URL for the tests
 
-    /* Collect trace when retrying the failed test. */
+    /* Collect trace when retrying the failed test for debugging */
     trace: "on-first-retry", // Collect trace only when retrying failed tests
 
     /* Ensure headless mode is used in all environments */
     headless: true, // Use headless mode for all tests
 
-    /* Disable videos and screenshots to speed up test execution */
-    video: "off", // Disable video recording to reduce overhead
-    screenshot: "off", // Disable screenshots unless necessary for debugging
+    /* Enable video and screenshots for failed tests */
+    video: "retain-on-failure", // Keep videos only for failed tests
+    screenshot: "only-on-failure", // Capture screenshots only for failed tests
   },
 
   /* Configure projects for major browsers */
