@@ -1,0 +1,198 @@
+<testsuites id="" name="" tests="21" failures="0" skipped="0" errors="0" time="53.215013">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.493" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.493">
+</testcase>
+</testsuite>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.337" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="13.337">
+<system-out>
+<![CDATA[Testing with replace('$', '') approach:
+Testing with regex approach:
+{ element: [32m'499$'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, number: [33m599[39m }
+The discount code is: 1597cfe6dc16
+]]>
+</system-out>
+<system-err>
+<![CDATA[{ element: [32m'320$'[39m, withoutDollarSign: [32m'320'[39m, number: [33m320[39m }
+{ element: [32m'499$'[39m, withoutDollarSign: [32m'499'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, withoutDollarSign: [32m'599'[39m, number: [33m599[39m }
+Method 1 - Your Approach: [ [33m320[39m, [33m499[39m, [33m599[39m ]
+Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.382" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.382">
+</testcase>
+</testsuite>
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.334" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="4.334">
+</testcase>
+</testsuite>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="firefox" tests="1" failures="0" skipped="0" time="17.48" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="17.48">
+<system-out>
+<![CDATA[Testing with replace('$', '') approach:
+Testing with regex approach:
+{ element: [32m'499$'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, number: [33m599[39m }
+The discount code is: 1597cfe6dc16
+]]>
+</system-out>
+<system-err>
+<![CDATA[{ element: [32m'320$'[39m, withoutDollarSign: [32m'320'[39m, number: [33m320[39m }
+{ element: [32m'499$'[39m, withoutDollarSign: [32m'499'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, withoutDollarSign: [32m'599'[39m, number: [33m599[39m }
+Method 1 - Your Approach: [ [33m320[39m, [33m499[39m, [33m599[39m ]
+Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.032" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="5.032">
+</testcase>
+</testsuite>
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.16" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="3.16">
+</testcase>
+</testsuite>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="webkit" tests="1" failures="0" skipped="0" time="25.504" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="25.504">
+<system-out>
+<![CDATA[Testing with replace('$', '') approach:
+Testing with regex approach:
+{ element: [32m'499$'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, number: [33m599[39m }
+The discount code is: 1597cfe6dc16
+]]>
+</system-out>
+<system-err>
+<![CDATA[{ element: [32m'320$'[39m, withoutDollarSign: [32m'320'[39m, number: [33m320[39m }
+{ element: [32m'499$'[39m, withoutDollarSign: [32m'499'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, withoutDollarSign: [32m'599'[39m, number: [33m599[39m }
+Method 1 - Your Approach: [ [33m320[39m, [33m499[39m, [33m599[39m ]
+Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.74" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="6.74">
+</testcase>
+</testsuite>
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="2.532" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.532">
+</testcase>
+</testsuite>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="13.076" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="13.076">
+<system-out>
+<![CDATA[Testing with replace('$', '') approach:
+Testing with regex approach:
+{ element: [32m'499$'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, number: [33m599[39m }
+The discount code is: 1597cfe6dc16
+]]>
+</system-out>
+<system-err>
+<![CDATA[{ element: [32m'320$'[39m, withoutDollarSign: [32m'320'[39m, number: [33m320[39m }
+{ element: [32m'499$'[39m, withoutDollarSign: [32m'499'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, withoutDollarSign: [32m'599'[39m, number: [33m599[39m }
+Method 1 - Your Approach: [ [33m320[39m, [33m499[39m, [33m599[39m ]
+Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="2.093" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="2.093">
+</testcase>
+</testsuite>
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="3.393" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="3.393">
+</testcase>
+</testsuite>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="21.088" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="21.088">
+<system-out>
+<![CDATA[Testing with replace('$', '') approach:
+Testing with regex approach:
+{ element: [32m'499$'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, number: [33m599[39m }
+The discount code is: 1597cfe6dc16
+]]>
+</system-out>
+<system-err>
+<![CDATA[{ element: [32m'320$'[39m, withoutDollarSign: [32m'320'[39m, number: [33m320[39m }
+{ element: [32m'499$'[39m, withoutDollarSign: [32m'499'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, withoutDollarSign: [32m'599'[39m, number: [33m599[39m }
+Method 1 - Your Approach: [ [33m320[39m, [33m499[39m, [33m599[39m ]
+Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="6.534" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="6.534">
+</testcase>
+</testsuite>
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="2.321" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.321">
+</testcase>
+</testsuite>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="11.785" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.785">
+<system-out>
+<![CDATA[Testing with replace('$', '') approach:
+Testing with regex approach:
+{ element: [32m'499$'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, number: [33m599[39m }
+The discount code is: 1597cfe6dc16
+]]>
+</system-out>
+<system-err>
+<![CDATA[{ element: [32m'320$'[39m, withoutDollarSign: [32m'320'[39m, number: [33m320[39m }
+{ element: [32m'499$'[39m, withoutDollarSign: [32m'499'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, withoutDollarSign: [32m'599'[39m, number: [33m599[39m }
+Method 1 - Your Approach: [ [33m320[39m, [33m499[39m, [33m599[39m ]
+Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="1.073" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.073">
+</testcase>
+</testsuite>
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.204" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.204">
+</testcase>
+</testsuite>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="11.557" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.557">
+<system-out>
+<![CDATA[Testing with replace('$', '') approach:
+Testing with regex approach:
+{ element: [32m'499$'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, number: [33m599[39m }
+The discount code is: 1597cfe6dc16
+]]>
+</system-out>
+<system-err>
+<![CDATA[{ element: [32m'320$'[39m, withoutDollarSign: [32m'320'[39m, number: [33m320[39m }
+{ element: [32m'499$'[39m, withoutDollarSign: [32m'499'[39m, number: [33m499[39m }
+{ element: [32m'599$'[39m, withoutDollarSign: [32m'599'[39m, number: [33m599[39m }
+Method 1 - Your Approach: [ [33m320[39m, [33m499[39m, [33m599[39m ]
+Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:29:02.820Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="0.971" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="0.971">
+</testcase>
+</testsuite>
+</testsuites>
