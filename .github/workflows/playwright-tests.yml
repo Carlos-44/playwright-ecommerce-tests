@@ -3,68 +3,68 @@ name: CI/CD Pipeline for Playwright Tests
 on:
   push:
     branches:
-      - main  # Run the tests on push to the main branch
+      - main
   pull_request:
     branches:
-      - main  # Run the tests on pull requests to the main branch
+      - main
 
 jobs:
   playwrighttests:
-    runs-on: ubuntu-latest  # Run on the latest Ubuntu environment
+    runs-on: ubuntu-latest
 
-    container:  # Use Playwright container with dependencies pre-installed
+    container:
       image: mcr.microsoft.com/playwright:v1.47.2-focal
       env:
         ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3  # Use the latest checkout version to pull the code
+      uses: actions/checkout@v3
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3  # Use the latest setup-node version
+      uses: actions/setup-node@v3
       with:
-        node-version: '16'  # Ensure you're using Node.js v16 or the version required by your project
+        node-version: '16'
 
     - name: Install dependencies
-      run: npm ci  # Install all dependencies from package-lock.json for a faster and more reliable install
+      run: npm ci
 
     - name: Start application
       run: |
         chmod +x ./shopping-store-linux-amd64
-        ./shopping-store-linux-amd64 &  # Start your application in the background
-      timeout-minutes: 2  # Added a timeout to prevent hanging
+        ./shopping-store-linux-amd64 &
+      timeout-minutes: 2
       env:
-        NODE_ENV: production  # Set NODE_ENV for production or appropriate environment
+        NODE_ENV: production
 
     - name: Run Playwright tests
-      run: npx playwright test --headed  # Run Playwright tests with GUI
-      timeout-minutes: 10  # Limit test duration to 10 minutes
-      continue-on-error: false  # Fail the job if tests fail
+      run: npx playwright test  # No need for the --headed flag
+      timeout-minutes: 10
+      continue-on-error: false
 
     - name: Generate Playwright report
-      run: npx playwright show-report  # Generate and open Playwright HTML report
+      run: npx playwright show-report
 
     - name: Upload Playwright report
-      if: failure()  # Only upload the report if the tests fail
-      uses: actions/upload-artifact@v3  # Upload the report as an artifact
+      if: failure()
+      uses: actions/upload-artifact@v3
       with:
         name: playwright-report
-        path: playwright-report  # Path to the report
+        path: playwright-report
 
     - name: Upload Test Results (JUnit)
-      if: always()  # Always upload the JUnit report regardless of test success or failure
+      if: always()
       uses: actions/upload-artifact@v3
       with:
         name: test-results
-        path: results.xml  # Path to the JUnit XML report
+        path: results.xml
 
     - name: Clean up
       if: always()
       run: |
         jobs=$(jobs -p)
         if [ -n "$jobs" ]; then
-          kill $jobs  # Ensure the background processes are killed if they exist
+          kill $jobs
         else
           echo "No background processes to clean up"
         fi
