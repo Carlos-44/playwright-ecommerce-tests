@@ -1,10 +1,10 @@
-<testsuites id="" name="" tests="21" failures="0" skipped="0" errors="0" time="50.265467">
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.711" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.711">
+<testsuites id="" name="" tests="21" failures="0" skipped="0" errors="0" time="55.541509">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.436" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.436">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.495" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="13.495">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="chromium" tests="1" failures="0" skipped="0" time="14.61" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="14.61">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
@@ -126,16 +126,16 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.349" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.349">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.168" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="2.168">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.34" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="4.34">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.659" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="5.659">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="firefox" tests="1" failures="0" skipped="0" time="16.774" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="16.774">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="firefox" tests="1" failures="0" skipped="0" time="18.406" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="18.406">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
@@ -257,16 +257,16 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.749" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="4.749">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.893" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="5.893">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.507" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="3.507">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.455" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="3.455">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="webkit" tests="1" failures="0" skipped="0" time="22.121" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="22.121">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="webkit" tests="1" failures="0" skipped="0" time="25.689" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="25.689">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
@@ -388,16 +388,16 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.27" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="6.27">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.015" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="7.015">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="2.386" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.386">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="2.391" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.391">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="12.225" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="12.225">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="12.695" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="12.695">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
@@ -519,16 +519,16 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="1.737" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.737">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="1.899" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.899">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="2.512" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.512">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="2.861" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.861">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="20.989" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="20.989">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="21.156" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="21.156">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
@@ -650,16 +650,16 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="5.132" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="5.132">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="5.441" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="5.441">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="2.494" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.494">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="2.706" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.706">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="11.753" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.753">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="12.572" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="12.572">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
@@ -781,16 +781,16 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="1.155" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.155">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="1.177" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.177">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.396" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.396">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.53" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.53">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="11.613" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.613">
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="11.99" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.99">
 <system-out>
 <![CDATA[Testing with replace('$', '') approach:
 Testing with regex approach:
@@ -912,8 +912,8 @@ Method 2 - Regex Approach: [ [33m499[39m, [33m599[39m ]
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T18:51:45.391Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="1.088" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.088">
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T19:16:41.104Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="1.087" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.087">
 </testcase>
 </testsuite>
 </testsuites>
