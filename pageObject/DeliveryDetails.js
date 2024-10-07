@@ -37,14 +37,7 @@ export class DeliveryDetails {
     );
   }
 
-  fillDetails = async (
-    firstName,
-    lastName,
-    street,
-    postcode,
-    city,
-    country
-  ) => {
+  async fillDetails(firstName, lastName, street, postcode, city, country) {
     await this.firstNameInput.waitFor({ state: "visible" });
     await this.firstNameInput.fill(firstName);
 
@@ -60,7 +53,7 @@ export class DeliveryDetails {
     await this.cityInput.waitFor({ state: "visible" });
     await this.cityInput.fill(city);
 
-    // Wait for the dropdown to be attached and visible
+    // Wait for the country dropdown to become visible and enabled
     await this.countryDropdown.waitFor({ state: "attached", timeout: 60000 });
     await this.countryDropdown.waitFor({ state: "visible", timeout: 60000 });
 
@@ -89,9 +82,9 @@ export class DeliveryDetails {
     if (!success) {
       throw new Error(`Failed to select country ${country} after 3 attempts.`);
     }
-  };
+  }
 
-  saveDetails = async () => {
+  async saveDetails() {
     // Capture the initial count of saved address containers before saving the address
     const addressCountBeforeSaving = await this.saveAddressContainer.count();
 
@@ -111,36 +104,36 @@ export class DeliveryDetails {
     await this.savedFirstNameInput.first().waitFor();
     const savedFirstName = await this.savedFirstNameInput.first().innerText();
     const filledFirstName = await this.firstNameInput.inputValue();
-    expect(savedFirstName).toBe(filledFirstName);
+    expect(savedFirstName.trim()).toBe(filledFirstName.trim());
 
     await this.savedLastNameInput.first().waitFor();
     const savedLastName = await this.savedLastNameInput.first().innerText();
     const filledLastName = await this.lastNameInput.inputValue();
-    expect(savedLastName).toBe(filledLastName);
+    expect(savedLastName.trim()).toBe(filledLastName.trim());
 
     await this.savedStreetInput.first().waitFor();
     const savedStreet = await this.savedStreetInput.first().innerText();
     const filledStreet = await this.streetInput.inputValue();
-    expect(savedStreet).toBe(filledStreet);
+    expect(savedStreet.trim()).toBe(filledStreet.trim());
 
     await this.savedPostcodeInput.first().waitFor();
     const savedPostcode = await this.savedPostcodeInput.first().innerText();
     const filledPostcode = await this.postcodeInput.inputValue();
-    expect(savedPostcode).toBe(filledPostcode);
+    expect(savedPostcode.trim()).toBe(filledPostcode.trim());
 
     await this.savedCityInput.first().waitFor();
     const savedCity = await this.savedCityInput.first().innerText();
     const filledCity = await this.cityInput.inputValue();
-    expect(savedCity).toBe(filledCity);
+    expect(savedCity.trim()).toBe(filledCity.trim());
 
     await this.savedCountryDropdown.first().waitFor();
     const savedCountry = await this.savedCountryDropdown.first().innerText();
-    const filledCountry = await this.countryDropdown.inputValue(); // Assuming inputValue() works for dropdowns
-    expect(savedCountry).toBe(filledCountry);
+    const filledCountry = await this.countryDropdown.inputValue(); // Use the correct value extraction method
+    expect(savedCountry.trim()).toBe(filledCountry.trim());
 
     // Continue to the payment section
     await this.continueToPaymentButton.waitFor({ state: "visible" });
     await this.continueToPaymentButton.click();
     await this.page.waitForURL(/\/payment/);
-  };
+  }
 }

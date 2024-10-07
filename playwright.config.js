@@ -1,124 +1,101 @@
-// @ts-check
 const { devices } = require("@playwright/test");
 
-/**
- * @see https://playwright.dev/docs/test-configuration
- * @type {import('@playwright/test').PlaywrightTestConfig}
- */
 const config = {
-  testDir: "./tests", // Directory where the test files are located
+  testDir: "./tests",
 
-  /* Maximum time one test can run for. */
-  timeout: 60 * 1000, // Increased to 60 seconds per test timeout
+  timeout: 60 * 1000,
 
   expect: {
-    /**
-     * Maximum time expect() should wait for the condition to be met.
-     * For example in `await expect(locator).toHaveText();`
-     */
-    timeout: 10000, // Increased to 10 seconds for assertions
+    timeout: 10000,
   },
 
-  globalSetup: require.resolve("./globalSetup.js"),
+  fullyParallel: true,
 
-  /* Run tests in files in parallel */
-  fullyParallel: true, // All tests run in parallel, faster for larger suites
+  forbidOnly: !!process.env.CI,
 
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
-  forbidOnly: !!process.env.CI, // Fail if test.only is in the code in CI
+  retries: process.env.CI ? 3 : 1,
 
-  /* Retry on CI only */
-  retries: process.env.CI ? 3 : 1, // Retries tests up to 3 times in CI, 1 retry locally
+  workers: process.env.CI ? 2 : 4,
 
-  /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 2 : 4, // Limits workers to 2 on CI and 4 locally
-
-  /* Reporter configuration with detailed options */
   reporter: [
-    ["line"],  // Concise console output
-    ["html", { outputFolder: "playwright-report", open: "never" }], // HTML report generation
-    ["junit", { outputFile: "results.xml" }]  // JUnit XML report for CI
+    ["line"],
+    ["html", { outputFolder: "playwright-report", open: "never" }],
+    ["junit", { outputFile: "results.xml" }],
   ],
 
-  /* Shared settings for all projects below. */
   use: {
-    /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
-    actionTimeout: 15000, // Increased action timeout to 15 seconds
+    actionTimeout: 15000,
 
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: "http://localhost:2221", // Default base URL for the tests
+    baseURL: "http://localhost:2221",
 
-    /* Collect trace when retrying the failed test for debugging */
-    trace: "on-first-retry", // Collect trace only when retrying failed tests
+    trace: "on-first-retry",
 
-    /* Ensure headless mode is used in all environments */
-    headless: true, // Use headless mode for all tests
+    headless: true,
 
-    /* Enable video and screenshots for failed tests */
-    video: "retain-on-failure", // Keep videos only for failed tests
-    screenshot: "only-on-failure", // Capture screenshots only for failed tests
+    video: "retain-on-failure",
+    screenshot: "only-on-failure",
   },
 
-  /* Configure projects for major browsers */
   projects: [
     {
-      name: "chromium", // Tests running in Google Chrome
+      name: "chromium",
       use: {
         ...devices["Desktop Chrome"],
-        headless: true, // Enforcing headless mode for Chrome
+        headless: true,
       },
     },
     {
-      name: "firefox", // Tests running in Firefox
+      name: "firefox",
       use: {
         ...devices["Desktop Firefox"],
-        headless: true, // Enforcing headless mode for Firefox
+        headless: true,
       },
     },
     {
-      name: "webkit", // Tests running in Safari (WebKit)
+      name: "webkit",
       use: {
         ...devices["Desktop Safari"],
-        headless: true, // Enforcing headless mode for Safari
+        headless: true,
       },
     },
-    /* Test against mobile viewports. */
     {
-      name: "Mobile Chrome", // Tests running in a mobile Chrome environment (simulated)
+      name: "Mobile Chrome",
       use: {
         ...devices["Pixel 5"],
-        headless: true, // Enforcing headless mode for Mobile Chrome
+        headless: true,
       },
     },
     {
-      name: "Mobile Safari", // Tests running in a mobile Safari environment (simulated)
+      name: "Mobile Safari",
       use: {
-        ...devices["iPhone 12"], // Simulates iPhone 12 device
-        headless: true, // Enforcing headless mode for Mobile Safari
+        ...devices["iPhone 12"],
+        headless: true,
       },
     },
     {
       name: "Microsoft Edge",
       use: {
-        channel: "msedge", // Uses Microsoft Edge instead of Chromium
-        headless: true, // Enforcing headless mode for Microsoft Edge
+        channel: "msedge",
+        headless: true,
       },
     },
     {
       name: "Google Chrome",
       use: {
-        channel: "chrome", // Uses the actual Google Chrome browser
-        headless: true, // Enforcing headless mode for Google Chrome
+        channel: "chrome",
+        headless: true,
       },
     },
   ],
 
   webServer: {
-    command: "npm run start", // Command to start the server before tests
-    port: 2221, // The port where your application will run
-    timeout: 180 * 1000, // Increased max time to wait for the server to start (180 seconds)
-    reuseExistingServer: true, // Reuse the existing server if it's already running
+    command: "npm run start",
+    port: 2221,
+    timeout: 180 * 1000,
+    reuseExistingServer: true,
   },
+
+  globalSetup: require.resolve("./globalSetup"),
 };
 
 module.exports = config;

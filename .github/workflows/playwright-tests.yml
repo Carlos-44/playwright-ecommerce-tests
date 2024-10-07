@@ -35,11 +35,13 @@ jobs:
     - name: Start application
       run: |
         chmod +x ./shopping-store-linux-amd64
-        ./shopping-store-linux-amd64 & # Starts the application in the background
-        npx wait-on http://localhost:2221 # Wait for the server to be ready
+        ./shopping-store-linux-amd64 &
       timeout-minutes: 2
       env:
         NODE_ENV: production
+
+    - name: Wait for server to start
+      run: npx wait-on http://localhost:2221
 
     - name: Run Playwright tests
       run: npx playwright test --timeout=60000  # Run the tests in headless mode
