@@ -16,6 +16,7 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.47.2-focal
       env:
         ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+        HOME: /root  # This will fix the issue with Firefox
 
     steps:
     - name: Checkout repository
@@ -30,27 +31,24 @@ jobs:
       run: npm install
 
     - name: Install wait-on
-      run: npm install wait-on --save-dev  # Ensure wait-on is installed
+      run: npm install wait-on --save-dev  # Ensures wait-on is installed
 
     - name: Start application
       run: |
         chmod +x ./shopping-store-linux-amd64
-        ./shopping-store-linux-amd64 & echo $! > pid.txt  # Start the app and track the PID for cleanup
+        ./shopping-store-linux-amd64 &
       timeout-minutes: 3  # Increased to 3 minutes
       env:
         NODE_ENV: production
 
     - name: Wait for server to start
-      run: npx wait-on http://localhost:2221 && sleep 10  # Wait for server to be fully up and running
-
-    - name: Log running processes (for debugging)
-      run: ps aux  # Log the running processes to verify the server is running
+      run: npx wait-on http://localhost:2221
 
     - name: Check server health
-      run: curl -f http://localhost:2221/ || exit 1  # Change the endpoint to '/' or adjust based on your app
+      run: curl -f http://localhost:2221/health || exit 1
 
     - name: Run Playwright tests
-      run: npx playwright test --timeout=60000 --workers=4  # Run Playwright tests in parallel with 4 workers
+      run: npx playwright test --timeout=60000
 
     - name: Generate Playwright report
       run: npx playwright show-report
@@ -63,7 +61,7 @@ jobs:
         path: playwright-report
 
     - name: Fix permissions for results.xml
-      run: chmod 777 results.xml  # Remove 'sudo' from this line
+      run: sudo chmod 777 results.xml
 
     - name: Upload Test Results (JUnit)
       if: always()
@@ -74,4 +72,9 @@ jobs:
 
     - name: Clean up
       if: always()
-      run: kill $(cat pid.txt) || echo "No process to kill"  # Cleanup by killing the server process tracked by pid.txt
+      run: |
+        jobs=$(jobs -p)
+        if [ -n "$jobs" ]; then
+          kill $jobs || echo "No background processes to kill"
+        fi
+        echo "Cleanup complete"
