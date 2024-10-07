@@ -1,233 +1,86 @@
-<testsuites id="" name="" tests="21" failures="0" skipped="0" errors="0" time="82.86482099999999">
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.056" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="3.056">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-chromium\trace.zip]]
-]]>
-</system-out>
+<testsuites id="" name="" tests="21" failures="0" skipped="0" errors="0" time="51.417632999999995">
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.725" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="3.725">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="chromium" tests="1" failures="0" skipped="0" time="19.723" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="19.723">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-chromium\trace.zip]]
-]]>
-</system-out>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="chromium" tests="1" failures="0" skipped="0" time="16.023" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="16.023">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.409" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="3.409">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-chromium\trace.zip]]
-]]>
-</system-out>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.693" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.693">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="firefox" tests="1" failures="0" skipped="0" time="6.924" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="6.924">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-firefox\video.webm]]
-
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-firefox\trace.zip]]
-]]>
-</system-out>
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="firefox" tests="1" failures="0" skipped="0" time="6.659" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="6.659">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="firefox" tests="1" failures="0" skipped="0" time="21.976" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="21.976">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-firefox\video.webm]]
-
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-firefox\trace.zip]]
-]]>
-</system-out>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="firefox" tests="1" failures="0" skipped="0" time="18.067" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="18.067">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="firefox" tests="1" failures="0" skipped="0" time="7.259" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="7.259">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-firefox\video.webm]]
-
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-firefox\trace.zip]]
-]]>
-</system-out>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="firefox" tests="1" failures="0" skipped="0" time="6.012" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="6.012">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="webkit" tests="1" failures="0" skipped="0" time="5.809" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="5.809">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-webkit\video.webm]]
-
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-webkit\trace.zip]]
-]]>
-</system-out>
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.533" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.533">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="webkit" tests="1" failures="0" skipped="0" time="59.8" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="59.8">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-webkit\video.webm]]
-
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-webkit\trace.zip]]
-]]>
-</system-out>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="webkit" tests="1" failures="0" skipped="0" time="18.096" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="18.096">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="webkit" tests="1" failures="0" skipped="0" time="13.678" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="13.678">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-webkit\video.webm]]
-
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-webkit\trace.zip]]
-]]>
-</system-out>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="webkit" tests="1" failures="0" skipped="0" time="4.943" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="4.943">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="2.85" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.85">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-Mobile-Chrome\video.webm]]
-
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-Mobile-Chrome\trace.zip]]
-]]>
-</system-out>
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="2.043" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.043">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="16.109" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="16.109">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-Mobile-Chrome\video.webm]]
-
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-Mobile-Chrome\trace.zip]]
-]]>
-</system-out>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="11.416" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.416">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="3.135" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="3.135">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-Mobile-Chrome\video.webm]]
-
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-Mobile-Chrome\trace.zip]]
-]]>
-</system-out>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="1.311" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="1.311">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="4.249" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="4.249">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-Mobile-Safari\video.webm]]
-
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-Mobile-Safari\trace.zip]]
-]]>
-</system-out>
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="2.252" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.252">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="41.849" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="41.849">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-Mobile-Safari\video.webm]]
-
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-Mobile-Safari\trace.zip]]
-]]>
-</system-out>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="17.07" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="17.07">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="10.772" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="10.772">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-Mobile-Safari\video.webm]]
-
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-Mobile-Safari\trace.zip]]
-]]>
-</system-out>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="4.709" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="4.709">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="2.657" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.657">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-Microsoft-Edge\video.webm]]
-
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-Microsoft-Edge\trace.zip]]
-]]>
-</system-out>
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="2.133" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.133">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="16.312" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="16.312">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-Microsoft-Edge\video.webm]]
-
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-Microsoft-Edge\trace.zip]]
-]]>
-</system-out>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="11.444" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.444">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="2.748" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="2.748">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-Microsoft-Edge\video.webm]]
-
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-Microsoft-Edge\trace.zip]]
-]]>
-</system-out>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="0.982" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="0.982">
 </testcase>
 </testsuite>
-<testsuite name="myAccount.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="3.291" errors="0">
-<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="3.291">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-Google-Chrome\video.webm]]
-
-[[ATTACHMENT|test-results\myAccount-My-account-using-cookie-injection-Google-Chrome\trace.zip]]
-]]>
-</system-out>
+<testsuite name="myAccount.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.223" errors="0">
+<testcase name="My account using cookie injection" classname="myAccount.spec.js" time="2.223">
 </testcase>
 </testsuite>
-<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="14.72" errors="0">
-<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="14.72">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-Google-Chrome\video.webm]]
-
-[[ATTACHMENT|test-results\newUserFullJourney-New-user-full-end-to-end-journey-Google-Chrome\trace.zip]]
-]]>
-</system-out>
+<testsuite name="newUserFullJourney.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="11.326" errors="0">
+<testcase name="New user full end to end journey" classname="newUserFullJourney.spec.js" time="11.326">
 </testcase>
 </testsuite>
-<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T20:52:39.830Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.666" errors="0">
-<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="2.666">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-Google-Chrome\video.webm]]
-
-[[ATTACHMENT|test-results\productPageAddItem-Click-A-a0723-kout-and-Navigate-to-Basket-Google-Chrome\trace.zip]]
-]]>
-</system-out>
+<testsuite name="productPageAddItem.spec.js" timestamp="2024-10-07T21:51:01.990Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="0.726" errors="0">
+<testcase name="Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket" classname="productPageAddItem.spec.js" time="0.726">
 </testcase>
 </testsuite>
 </testsuites>

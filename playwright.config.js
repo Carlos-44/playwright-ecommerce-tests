@@ -24,10 +24,10 @@ const config = {
   ],
 
   use: {
-    actionTimeout: 15000,
+    actionTimeout: 15000, // Action timeout of 15 seconds
     baseURL: "http://localhost:2221", // Local server URL
-    trace: "on",  // Enable trace on every test for debugging
-    video: "on",  // Record video for all tests
+    trace: "on-first-retry",  // Enable trace on the first retry for debugging
+    video: "on-first-retry",  // Record video on the first retry
     headless: true,  // Always run in headless mode
     screenshot: "only-on-failure", // Capture screenshots on failure
   },
