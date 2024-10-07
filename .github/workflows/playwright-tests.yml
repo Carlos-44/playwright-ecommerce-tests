@@ -41,10 +41,13 @@ jobs:
         NODE_ENV: production
 
     - name: Wait for server to start
-      run: npx wait-on http://localhost:2221 && sleep 10  # Ensure the server is up and add some buffer
+      run: npx wait-on http://localhost:2221 && sleep 10  # Wait for server to be fully up and running
+
+    - name: Log running processes (for debugging)
+      run: ps aux  # Log the running processes to verify the server is running
 
     - name: Check server health
-      run: curl -f http://localhost:2221/health || exit 1  # Optional: Add server health check to ensure it's live
+      run: curl -f http://localhost:2221/ || exit 1  # Change the endpoint to '/' or adjust based on your app
 
     - name: Run Playwright tests
       run: npx playwright test --timeout=60000 --workers=4  # Run Playwright tests in parallel with 4 workers
