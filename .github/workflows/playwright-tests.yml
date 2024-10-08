@@ -67,7 +67,7 @@ jobs:
 
     # Generate Playwright report
     - name: Generate Playwright report
-      run: npx playwright show-report --output=playwright-report
+      run: npx playwright show-report
 
     # Upload Playwright report
     - name: Upload Playwright report
