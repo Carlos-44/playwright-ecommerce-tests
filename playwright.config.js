@@ -78,20 +78,7 @@ const config = {
         headless: !!process.env.CI, // Headless only in CI
       },
     },
-    {
-      name: "Microsoft Edge",
-      use: {
-        channel: "msedge",
-        headless: !!process.env.CI, // Headless only in CI
-      },
-    },
-    {
-      name: "Google Chrome",
-      use: {
-        channel: "chrome",
-        headless: !!process.env.CI, // Headless only in CI
-      },
-    },
+    // Removed Microsoft Edge and Google Chrome configurations
   ],
 
   // Configure web server settings
@@ -104,6 +91,5 @@ const config = {
 
   globalSetup: require.resolve("./globalSetup"), // Run global setup before tests
 };
-
 
 module.exports = config;
