@@ -65,9 +65,11 @@ jobs:
         HOME: /root  # Fix for running Firefox headless in GitHub Actions
       run: npx playwright test --timeout=60000
 
+    # Generate Playwright report but do not serve it on localhost
     - name: Generate Playwright report
-      run: npx playwright show-report
+      run: npx playwright generate-report
 
+    # Upload Playwright report
     - name: Upload Playwright report
       if: always()
       uses: actions/upload-artifact@v4
@@ -75,9 +77,11 @@ jobs:
         name: playwright-report
         path: playwright-report
 
+    # Fix permissions for results.xml (JUnit report)
     - name: Fix permissions for results.xml
       run: sudo chmod 777 results.xml
 
+    # Upload Test Results (JUnit)
     - name: Upload Test Results (JUnit)
       if: always()
       uses: actions/upload-artifact@v4
