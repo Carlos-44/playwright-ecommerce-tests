@@ -99,7 +99,7 @@ const config = {
     command: "npm run start", // Command to start the app
     port: 2221, // Port where the app is served
     timeout: 180 * 1000, // 3 minutes timeout for the server to start
-    reuseExistingServer: !process.env.CI, // Reuse server in local dev
+    reuseExistingServer: true, // Reuse server to avoid port conflict
   },
 
   globalSetup: require.resolve("./globalSetup"), // Run global setup before tests
