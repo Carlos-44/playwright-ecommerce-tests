@@ -35,7 +35,7 @@ jobs:
     - name: Start application
       run: |
         chmod +x ./binaries/shopping-store-linux-amd64  # Corrected path to the binary inside the repo
-        ./binaries/shopping-store-linux-amd64 &  # Start the binary
+        ./binaries/shopping-store-linux-amd64 > server.log 2>&1 &  # Start the binary and log output
       timeout-minutes: 3
       env:
         NODE_ENV: production
@@ -48,6 +48,9 @@ jobs:
         for i in {1..10}; do
           curl -f http://localhost:2221/ && break || sleep 5;
         done || exit 1
+
+    - name: Display server logs (for debugging)
+      run: cat server.log
 
     - name: Run Playwright tests
       run: npx playwright test --timeout=60000
