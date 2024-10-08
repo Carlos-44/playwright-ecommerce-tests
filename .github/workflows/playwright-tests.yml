@@ -65,10 +65,6 @@ jobs:
         HOME: /root  # Fix for running Firefox headless in GitHub Actions
       run: npx playwright test --timeout=60000
 
-    # Generate Playwright report
-    - name: Generate Playwright report
-      run: npx playwright show-report
-
     # Upload Playwright report
     - name: Upload Playwright report
       if: always()
