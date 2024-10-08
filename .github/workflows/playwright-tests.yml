@@ -49,9 +49,10 @@ jobs:
 
     - name: Start application
       run: |
-        chmod +x ./shopping-store-linux-amd64  # Ensure binary has correct path
-        ./shopping-store-linux-amd64 &
+        chmod +x ./binaries/shopping-store-linux-amd64  # Corrected path
+        ./binaries/shopping-store-linux-amd64 &
       timeout-minutes: 3
+    
       env:
         NODE_ENV: production
 
