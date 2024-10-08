@@ -75,7 +75,7 @@ jobs:
 
     # Fix permissions for results.xml (JUnit report)
     - name: Fix permissions for results.xml
-      run: sudo chmod 777 results.xml
+      run: chmod 777 results.xml
 
     # Upload Test Results (JUnit)
     - name: Upload Test Results (JUnit)
