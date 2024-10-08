@@ -17,21 +17,6 @@ jobs:
       env:
         ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
 
-    services:
-      postgres:
-        image: postgres:13
-        env:
-          POSTGRES_DB: mydb
-          POSTGRES_USER: myuser
-          POSTGRES_PASSWORD: mypassword
-        ports:
-          - 5432:5432
-        options: >-
-          --health-cmd "pg_isready -U myuser" 
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
@@ -49,7 +34,7 @@ jobs:
 
     - name: Start application
       run: |
-        chmod +x ./binaries/shopping-store-linux-amd64  # Corrected path to the binary inside repo
+        chmod +x ./binaries/shopping-store-linux-amd64  # Corrected path to the binary inside the repo
         ./binaries/shopping-store-linux-amd64 &  # Start the binary
       timeout-minutes: 3
       env:
