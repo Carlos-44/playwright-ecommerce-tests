@@ -16,7 +16,6 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.47.2-focal
       env:
         ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
-        HOME: /root  # This will fix the issue with Firefox
 
     steps:
     - name: Checkout repository
@@ -35,9 +34,9 @@ jobs:
 
     - name: Start application
       run: |
-        chmod +x ./shopping-store-linux-amd64
+        chmod +x ./shopping-store-linux-amd64  # For Unix, use ./shopping-store-linux-amd64
         ./shopping-store-linux-amd64 &
-      timeout-minutes: 3  # Increased to 3 minutes
+      timeout-minutes: 3
       env:
         NODE_ENV: production
 
@@ -45,7 +44,7 @@ jobs:
       run: npx wait-on http://localhost:2221
 
     - name: Check server health
-      run: curl -f http://localhost:2221/health || exit 1
+      run: curl -f http://localhost:2221/ || exit 1
 
     - name: Run Playwright tests
       run: npx playwright test --timeout=60000
