@@ -32,16 +32,22 @@ jobs:
     - name: Install wait-on
       run: npm install wait-on --save-dev  # Ensures wait-on is installed
 
+    # Kill any process using port 2221 (cleanup before starting server)
+    - name: Ensure port 2221 is free
+      run: |
+        sudo fuser -k 2221/tcp || echo "Port 2221 is free"
+
     - name: Start application
       run: |
         chmod +x ./binaries/shopping-store-linux-amd64  # Corrected path to the binary inside the repo
         ./binaries/shopping-store-linux-amd64 > server.log 2>&1 &  # Start the binary and log output
-      timeout-minutes: 3
+      timeout-minutes: 5
       env:
         NODE_ENV: production
 
+    # Increased timeout to allow the server more time to start
     - name: Wait for server to start
-      run: npx wait-on http://localhost:2221
+      run: npx wait-on http://localhost:2221 --timeout=600000  # 10 minutes
 
     - name: Check server health
       run: |
@@ -49,10 +55,14 @@ jobs:
           curl -f http://localhost:2221/ && break || sleep 5;
         done || exit 1
 
+    # Display server logs for debugging purposes
     - name: Display server logs (for debugging)
       run: cat server.log
 
+    # Environment variable to fix Firefox issue
     - name: Run Playwright tests
+      env:
+        HOME: /root  # Fix for running Firefox headless in GitHub Actions
       run: npx playwright test --timeout=60000
 
     - name: Generate Playwright report
@@ -75,6 +85,7 @@ jobs:
         name: test-results
         path: results.xml
 
+    # Improved cleanup step
     - name: Clean up
       if: always()
       run: |
