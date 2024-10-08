@@ -17,6 +17,21 @@ jobs:
       env:
         ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
 
+    services:
+      postgres:
+        image: postgres:13
+        env:
+          POSTGRES_DB: mydb
+          POSTGRES_USER: myuser
+          POSTGRES_PASSWORD: mypassword
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U myuser" 
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
@@ -34,7 +49,7 @@ jobs:
 
     - name: Start application
       run: |
-        chmod +x ./shopping-store-linux-amd64  # For Unix, use ./shopping-store-linux-amd64
+        chmod +x ./shopping-store-linux-amd64  # Ensure binary has correct path
         ./shopping-store-linux-amd64 &
       timeout-minutes: 3
       env:
@@ -44,7 +59,10 @@ jobs:
       run: npx wait-on http://localhost:2221
 
     - name: Check server health
-      run: curl -f http://localhost:2221/ || exit 1
+      run: |
+        for i in {1..10}; do
+          curl -f http://localhost:2221/ && break || sleep 5;
+        done || exit 1
 
     - name: Run Playwright tests
       run: npx playwright test --timeout=60000
@@ -53,7 +71,7 @@ jobs:
       run: npx playwright show-report
 
     - name: Upload Playwright report
-      if: failure()
+      if: always()
       uses: actions/upload-artifact@v4
       with:
         name: playwright-report
@@ -76,4 +94,5 @@ jobs:
         if [ -n "$jobs" ]; then
           kill $jobs || echo "No background processes to kill"
         fi
+        pkill -f shopping-store-linux-amd64 || true  # Ensure the app is terminated
         echo "Cleanup complete"
