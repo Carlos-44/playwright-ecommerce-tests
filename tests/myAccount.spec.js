@@ -1,4 +1,4 @@
-import { test } from "@playwright/test";
+import { test, expect } from "@playwright/test";
 import { MyAccountPage } from "../pageObject/MyAccountPage";
 import { getLoginToken } from "../API-Calls/getLoginToken";
 import { adminDetails } from "../Data/UserDetailAPI";
@@ -22,5 +22,5 @@ test("My account using cookie injection", async ({ page }) => {
 
   // Visit the My Account page again after setting the token
   await myAccount.visit();
-  await myAccount.waitForPageHeading();
+  await expect(myAccount.pageHeading).toBeVisible();
 });

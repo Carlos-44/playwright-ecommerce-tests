@@ -1,5 +1,10 @@
 node_modules/
-/test-results/
-/playwright-report/
+playwright-report/
+test-results/
 /playwright/.cache/
+results.xml
+server.log
 .env
+*.log
+dist/
+.DS_Store

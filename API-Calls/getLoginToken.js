@@ -1,15 +1,12 @@
-import * as nodeFetch from 'node-fetch';
+const BASE_URL = process.env.SERVER_URL || "http://localhost:2221";
 
-export const getLoginToken = async () => {
-  const response = await nodeFetch("http://localhost:2221/api/login", {
+export const getLoginToken = async (username, password) => {
+  const response = await fetch(`${BASE_URL}/api/login`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      username: "admin",  // Replace with your actual username
-      password: "Admin123", // Replace with your actual password
-    }),
+    body: JSON.stringify({ username, password }),
   });
 
   if (!response.ok) {
@@ -17,5 +14,5 @@ export const getLoginToken = async () => {
   }
 
   const body = await response.json();
-  return body.token;  // Assuming the response contains a token
+  return body.token;
 };
