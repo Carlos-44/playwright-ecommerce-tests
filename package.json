@@ -7,13 +7,16 @@
     "test:ui": "playwright test --ui",
     "test:headed": "playwright test --headed",
     "test:report": "playwright show-report",
-    "start": "shopping-store.exe"
+    "start": "shopping-store.exe",
+    "test:bdd": "cucumber-js --config cucumber.json",
+    "test:bdd:report": "cucumber-js --config cucumber.json --format html:cucumber-report.html"
   },
   "keywords": [],
   "author": "Carlos Ozoria",
   "license": "ISC",
   "description": "Playwright E2E tests (Page Object Model) for a demo e-commerce web app",
   "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
     "@playwright/test": "^1.29.1"
   },
   "dependencies": {
