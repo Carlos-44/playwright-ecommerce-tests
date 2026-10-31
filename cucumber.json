@@ -1,0 +1,14 @@
+{
+  "default": {
+    "paths": ["features/**/*.feature"],
+    "require": ["features/step_definitions/**/*.js", "features/support/**/*.js"],
+    "format": [
+      "progress-bar",
+      "json:cucumber-report.json"
+    ],
+    "formatOptions": { "snippetInterface": "async-await" },
+    "worldParameters": {
+      "baseURL": "http://localhost:2221"
+    }
+  }
+}
