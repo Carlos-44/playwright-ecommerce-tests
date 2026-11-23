@@ -127,7 +127,8 @@ jobs:
     name: Publish Results
     runs-on: ubuntu-24.04
     needs: test
-    if: always()
+    # Skipped when the test job was skipped (pull_request runs), since there are no results to publish.
+    if: always() && needs.test.result != 'skipped'
     permissions:
       checks: write
       contents: read
