@@ -3,7 +3,7 @@ import { MyAccountPage } from "../pageObject/MyAccountPage";
 import { getLoginToken } from "../API-Calls/getLoginToken";
 import { adminDetails } from "../Data/UserDetailAPI";
 
-test("My account using cookie injection", async ({ page }) => {
+test("[TC-007] My account using cookie injection", async ({ page }) => {
   // Get login token from API
   const loginToken = await getLoginToken(
     adminDetails.username,

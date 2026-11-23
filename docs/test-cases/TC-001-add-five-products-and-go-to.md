@@ -2,9 +2,9 @@
 
 - **Priority:** P1
 - **Type:** functional
-- **Linked criteria:** F-01 AC-01
+- **Linked criteria:** F-01 AC-01 ([F-01](../features/F-01-basket.md))
 - **Status:** Manual only
-- **Automation:** Manual only: needs a system install. The store under test is a Linux-only binary (`binaries/shopping-store-linux-amd64`), which needs WSL or Docker on this Windows PC. In CI the test job runs only on manual (`workflow_dispatch`) runs. Automated spec: `tests/productPageAddItem.spec.js` ("Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket").
+- **Automation:** Manual only: needs a system install. The store under test is a Linux-only binary (`binaries/shopping-store-linux-amd64`), which needs WSL or Docker on this Windows PC. In CI the test job runs only on manual (`workflow_dispatch`) runs. Automated spec: `tests/productPageAddItem.spec.js` ("[TC-001][TC-002] Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket").
 
 ## Preconditions
 - The store is running.

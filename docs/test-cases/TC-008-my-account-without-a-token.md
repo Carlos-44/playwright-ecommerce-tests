@@ -2,7 +2,7 @@
 
 - **Priority:** P3
 - **Type:** negative
-- **Linked criteria:** F-03 AC-02
+- **Linked criteria:** F-03 AC-02 ([F-03](../features/F-03-my-account.md))
 - **Status:** Manual only
 - **Automation:** Manual only: needs a system install. The store under test is a Linux-only binary (`binaries/shopping-store-linux-amd64`), which needs WSL or Docker on this Windows PC. In CI the test job runs only on manual (`workflow_dispatch`) runs. No automated test exists yet.
 

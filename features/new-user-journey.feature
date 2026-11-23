@@ -3,7 +3,7 @@ Feature: New User Full End-to-End Journey
   I want to browse products, add them to the basket, register, and complete checkout
   So that I can make my first purchase successfully
 
-  Scenario: New user completes full purchase journey
+  Scenario: [TC-003][TC-004][TC-005][TC-006] New user completes full purchase journey
     Given I am on the products page
     When I sort products by cheapest
     And I add the first 3 products to the basket
