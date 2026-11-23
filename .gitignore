@@ -8,3 +8,4 @@ server.log
 *.log
 dist/
 .DS_Store
+cucumber-report.html

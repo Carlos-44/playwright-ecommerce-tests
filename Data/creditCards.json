@@ -8,13 +8,13 @@
       },
       {
         "ownerName": "Jane Smith",
-        "cardNumber": "5500000000000004",
+        "cardNumber": "5555555555554444",
         "validUntil": "08/24",
         "cvc": "456"
       },
       {
         "ownerName": "Alex Johnson",
-        "cardNumber": "340000000000009",
+        "cardNumber": "378282246310005",
         "validUntil": "03/23",
         "cvc": "789"
       }
