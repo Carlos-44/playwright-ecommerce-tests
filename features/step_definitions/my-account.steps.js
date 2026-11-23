@@ -1,10 +1,12 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 const { expect } = require('@playwright/test');
 const { getLoginToken } = require('../../API-Calls/getLoginToken');
-const { adminDetails } = require('../../Data/UserDetailAPI');
+const { getAdminDetails } = require('../../Data/UserDetailAPI');
 const { MyAccountPage } = require('../../pageObject/MyAccountPage');
 
 Given('I have obtained a login token via the API', async function () {
+  // Admin login comes from ADMIN_USERNAME / ADMIN_PASSWORD; fails clearly if unset
+  const adminDetails = getAdminDetails();
   this.loginToken = await getLoginToken(adminDetails.username, adminDetails.password);
 });
 

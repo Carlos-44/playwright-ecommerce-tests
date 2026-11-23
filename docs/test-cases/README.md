@@ -17,4 +17,4 @@ Totals: 8 test cases — 0 Automated, 8 Manual only, 0 Not started.
 
 Notes:
 - Card data lives only in `Data/creditCards.json`, which uses published test-card numbers since 2026-11-23. No numbers are reproduced in these docs.
-- Admin login values come from `Data/UserDetailAPI.js` or `ADMIN_PASSWORD` in `.env`, and aren't reproduced here.
+- Admin login comes only from the environment variables `ADMIN_USERNAME` and `ADMIN_PASSWORD` (see `.env.example`). There is no hardcoded fallback.

@@ -1,9 +1,12 @@
 import { test, expect } from "@playwright/test";
 import { MyAccountPage } from "../pageObject/MyAccountPage";
 import { getLoginToken } from "../API-Calls/getLoginToken";
-import { adminDetails } from "../Data/UserDetailAPI";
+import { getAdminDetails } from "../Data/UserDetailAPI";
 
 test("My account using cookie injection", async ({ page }) => {
+  // Admin login comes from ADMIN_USERNAME / ADMIN_PASSWORD; fails clearly if unset
+  const adminDetails = getAdminDetails();
+
   // Get login token from API
   const loginToken = await getLoginToken(
     adminDetails.username,
