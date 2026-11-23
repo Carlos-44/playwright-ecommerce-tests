@@ -8,10 +8,10 @@
 
 ## Preconditions
 - The store is running.
-- Admin credentials available.
+- Environment variables `ADMIN_USERNAME` and `ADMIN_PASSWORD` are set (for example in a gitignored `.env`; see `.env.example`). If either is missing, the test fails with a message naming it.
 
 ## Test data
-- Admin credentials from `Data/UserDetailAPI.js` or `.env` (not reproduced here).
+- Admin login from the environment variables `ADMIN_USERNAME` and `ADMIN_PASSWORD`, read by `getAdminDetails()` in `Data/UserDetailAPI.js`. There is no fallback value, and none is reproduced here.
 
 ## Steps
 | # | Action | Expected result |

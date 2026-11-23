@@ -10,7 +10,7 @@
 - The store is running, with no token cookie.
 
 ## Test data
-- Admin credentials from `Data/UserDetailAPI.js` or `.env` (not reproduced here).
+- Admin login from the environment variables `ADMIN_USERNAME` and `ADMIN_PASSWORD`, read by `getAdminDetails()` in `Data/UserDetailAPI.js`. There is no fallback value, and none is reproduced here.
 
 ## Steps
 | # | Action | Expected result |
