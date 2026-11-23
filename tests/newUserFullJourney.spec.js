@@ -12,7 +12,7 @@ const fs = require('fs');
 const countriesData = JSON.parse(fs.readFileSync('./Data/countries.json', 'utf8'));
 
 
-test("New user full end to end journey", async ({ page }) => {
+test("[TC-003][TC-004][TC-005][TC-006] New user full end to end journey", async ({ page }) => {
   // Initialize ProductsPage and perform product actions
   const productPage = new ProductsPage(page);
   await productPage.visit();

@@ -2,9 +2,9 @@
 
 - **Priority:** P1
 - **Type:** functional
-- **Linked criteria:** F-03 AC-01
+- **Linked criteria:** F-03 AC-01 ([F-03](../features/F-03-my-account.md))
 - **Status:** Manual only
-- **Automation:** Manual only: needs a system install. The store under test is a Linux-only binary (`binaries/shopping-store-linux-amd64`), which needs WSL or Docker on this Windows PC. In CI the test job runs only on manual (`workflow_dispatch`) runs. Automated spec: `tests/myAccount.spec.js` ("My account using cookie injection").
+- **Automation:** Manual only: needs a system install. The store under test is a Linux-only binary (`binaries/shopping-store-linux-amd64`), which needs WSL or Docker on this Windows PC. In CI the test job runs only on manual (`workflow_dispatch`) runs. Automated spec: `tests/myAccount.spec.js` ("[TC-007] My account using cookie injection").
 
 ## Preconditions
 - The store is running.

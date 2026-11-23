@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket", async ({
+test("[TC-001][TC-002] Click All Submit Buttons, Verify Text Changes, Checkout, and Navigate to Basket", async ({
   page,
 }) => {
   await page.goto("/");

@@ -2,9 +2,9 @@
 
 - **Priority:** P2
 - **Type:** functional
-- **Linked criteria:** F-02 AC-03
+- **Linked criteria:** F-02 AC-03 ([F-02](../features/F-02-checkout-journey.md))
 - **Status:** Manual only
-- **Automation:** Manual only: needs a system install. The store under test is a Linux-only binary (`binaries/shopping-store-linux-amd64`), which needs WSL or Docker on this Windows PC. In CI the test job runs only on manual (`workflow_dispatch`) runs. Automated spec: `tests/newUserFullJourney.spec.js` ("New user full end to end journey").
+- **Automation:** Manual only: needs a system install. The store under test is a Linux-only binary (`binaries/shopping-store-linux-amd64`), which needs WSL or Docker on this Windows PC. In CI the test job runs only on manual (`workflow_dispatch`) runs. Automated spec: `tests/newUserFullJourney.spec.js` ("[TC-003][TC-004][TC-005][TC-006] New user full end to end journey").
 
 ## Preconditions
 - On `/delivery-details` as a new customer.
