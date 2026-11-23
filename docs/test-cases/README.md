@@ -1,22 +1,20 @@
 # Test cases: traceability
 
-New IDs start at TC-001. Each acceptance criterion in `docs/features/` has at least one test case.
+One manual test-case file per test case. They cover the 3 Playwright specs (`productPageAddItem`, `newUserFullJourney`, `myAccount`), which run on 5 browser projects each. Every case is Manual only on this PC, because the store is a Linux-only binary.
 
-| Requirement | Test cases | Automated |
-|---|---|---|
-| F-01 AC-01 | [TC-001](TC-001.md) | No |
-| F-01 AC-02 | [TC-002](TC-002.md) | No |
-| F-02 AC-01 | [TC-003](TC-003.md) | No |
-| F-02 AC-02 | [TC-004](TC-004.md) | No |
-| F-02 AC-03 | [TC-005](TC-005.md) | No |
-| F-02 AC-04 | [TC-006](TC-006.md) | No |
-| F-03 AC-01 | [TC-007](TC-007.md) | No |
-| F-03 AC-02 | [TC-008](TC-008.md) | No |
+| TC ID | Status | Automation file | Manual file |
+|---|---|---|---|
+| TC-001 | Manual only | `tests/productPageAddItem.spec.js` | [TC-001-add-five-products-and-go-to.md](TC-001-add-five-products-and-go-to.md) |
+| TC-002 | Manual only | `tests/productPageAddItem.spec.js` | [TC-002-checkout-link-opens-the-basket-desktop.md](TC-002-checkout-link-opens-the-basket-desktop.md) |
+| TC-003 | Manual only | `tests/newUserFullJourney.spec.js` | [TC-003-basket-edits-lead-to-login-and.md](TC-003-basket-edits-lead-to-login-and.md) |
+| TC-004 | Manual only | `tests/newUserFullJourney.spec.js` | [TC-004-new-customer-registers-during-checkout.md](TC-004-new-customer-registers-during-checkout.md) |
+| TC-005 | Manual only | `tests/newUserFullJourney.spec.js` | [TC-005-save-delivery-details.md](TC-005-save-delivery-details.md) |
+| TC-006 | Manual only | `tests/newUserFullJourney.spec.js` | [TC-006-apply-discount-and-pay.md](TC-006-apply-discount-and-pay.md) |
+| TC-007 | Manual only | `tests/myAccount.spec.js` | [TC-007-my-account-opens-with-an-api.md](TC-007-my-account-opens-with-an-api.md) |
+| TC-008 | Manual only | — | [TC-008-my-account-without-a-token.md](TC-008-my-account-without-a-token.md) |
 
-Totals: 8 test cases. 7 have an existing automated test, and 1 have none. None are marked Automated yet; statuses are set after a recorded test run.
+Totals: 8 test cases — 0 Automated, 8 Manual only, 0 Not started.
 
 Notes:
-- Each Playwright test runs on 5 browser projects, so one test case maps to 5 runs.
-- The Cucumber features in `features/` mirror TC-001 and TC-002, TC-003 to TC-006, and TC-007.
-- No card numbers or credentials are reproduced in these docs.
-- The workflow on this branch is pinned to `ubuntu-24.04` (Playwright 1.47.2 predates Ubuntu 26.04, which `ubuntu-latest` now uses).
+- Card data lives only in `Data/creditCards.json`, which uses published test-card numbers since 2026-11-23. No numbers are reproduced in these docs.
+- Admin login values come from `Data/UserDetailAPI.js` or `ADMIN_PASSWORD` in `.env`, and aren't reproduced here.
