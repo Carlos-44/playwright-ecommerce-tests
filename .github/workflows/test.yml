@@ -12,7 +12,7 @@ permissions:
 jobs:
   install:
     name: Install Dependencies
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 
@@ -34,8 +34,10 @@ jobs:
 
   test:
     name: Run Tests
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: install
+    # This job starts the prebuilt shop binary; it is skipped on pull_request runs.
+    if: github.event_name != 'pull_request'
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -123,9 +125,10 @@ jobs:
 
   report:
     name: Publish Results
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: test
-    if: always()
+    # Skipped when the test job was skipped (pull_request runs), since there are no results to publish.
+    if: always() && needs.test.result != 'skipped'
     permissions:
       checks: write
       contents: read
@@ -148,7 +151,7 @@ jobs:
 
   notify:
     name: Pipeline Summary
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: [test, report]
     if: always()
     steps:
